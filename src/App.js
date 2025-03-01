@@ -6,8 +6,6 @@ import "./Styles/App.css";
 const App = () => {
     return(
         <div>
-            // <Test />
-
             <MyNavbar />
         </div>
     );
