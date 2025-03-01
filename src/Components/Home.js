@@ -6,22 +6,25 @@ const MyNavbar = () => {
         <header>
                 <nav className = "navbar">
                     <div>
-                        <a>  
+                        <img src = " " alt = "logo" />
+                    </div>
+                    <div>
+                        <a href = " " target = "_self">  
                              <h1> Home </h1>
                         </a>
                     </div>
                     <div>
-                        <a>
+                        <a href = " " target = "_self">
                             <h1> Coming Soon </h1>
                         </a>
                     </div>
                     <div>
-                        <a>
+                        <a href = " " target = "_self">
                             <h1> Blog </h1>
                         </a>
                     </div>
                     <div>
-                        <a>
+                        <a href = " " target = "_self">
                             <h1> Contact Me </h1>
                         </a>
                     </div>
