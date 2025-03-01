@@ -48,4 +48,19 @@ const MyNavbar = () => {
     );
 };
 
-export default MyNavbar;
+const Main = () => {
+    return(
+        <main className = "main-container">
+
+        </main>
+    );
+};
+
+const Footer = () => {
+    return(
+        <footer className = "footer-container">
+        
+        </footer>
+    );
+};
+export { MyNavbar, Main, Footer };
