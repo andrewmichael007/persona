@@ -4,9 +4,10 @@ import "../Styles/App.css";
 const MyNavbar = () => {
     return(
         <header>
-                <nav className = "navbar">
-                    <div>
+                <nav className = "navbar-container">
+                    <div className = "logo-container">
                         <img src = " " alt = "logo" />
+                        <h4> Andy </h4>
                     </div>
                     <div className = "nav opt1">
                         <a href = " " target = "_self">  
