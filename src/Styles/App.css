@@ -40,3 +40,23 @@
     text-transform: uppercase;
     color: black;
 }
+
+/* sidebar click styling */
+#top-bar, #bottom-bar{
+  border: 1px solid black;
+  width: 20px;
+  height: 1px;;
+  background-color: #333;
+  transition: transform 0.3s ease;
+  margin: 0px 0px 4px 0px;
+}
+#mid-bar{
+    border: 1px solid black;
+    width: 10px;  
+    height: 1px;;
+    background-color: #333;
+    transition: transform 0.3s ease;
+    margin: 0px 0px 4px 0px;
+}
+
+
