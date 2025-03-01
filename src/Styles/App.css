@@ -59,4 +59,10 @@
     margin: 0px 0px 4px 0px;
 }
 
-
+.main-container{
+    min-height: 100vh;
+    /* min-width: 100px; */
+    background-color: white;
+    box-shadow: 2px 2px 8px black;
+    border-radius: 10px;
+}
