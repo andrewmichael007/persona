@@ -8,24 +8,24 @@ const MyNavbar = () => {
                     <div>
                         <img src = " " alt = "logo" />
                     </div>
-                    <div>
+                    <div className = "nav opt1">
                         <a href = " " target = "_self">  
-                             <h1> Home </h1>
+                             <h4> Home </h4>
                         </a>
                     </div>
-                    <div>
+                    <div className = "nav opt2">
                         <a href = " " target = "_self">
-                            <h1> Coming Soon </h1>
+                            <h4> Coming Soon </h4>
                         </a>
                     </div>
-                    <div>
+                    <div className = "nav opt3">
                         <a href = " " target = "_self">
-                            <h1> Blog </h1>
+                            <h4> Blog </h4>
                         </a>
                     </div>
-                    <div>
+                    <div className = "nav opt4">
                         <a href = " " target = "_self">
-                            <h1> Contact Me </h1>
+                            <h4> Contact Me </h4>
                         </a>
                     </div>
                   </nav>
