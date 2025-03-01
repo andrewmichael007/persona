@@ -15,7 +15,6 @@
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     align-items: center;
-    position: fixed;
 }
 
 .logo-container{
@@ -69,7 +68,7 @@
     background-color: white;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);    
     border-radius: 5px;
-    right: 2%;
+    margin: 0.5%;
 }
 
 .footer-container{
