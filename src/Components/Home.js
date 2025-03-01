@@ -4,11 +4,12 @@ import "../Styles/App.css";
 const MyNavbar = () => {
     return(
         <header>
+                <div className = "logo-container">
+                    <img src = " " alt = "logo" />
+                    <h4> Andy </h4>
+                </div>
                 <nav className = "navbar-container">
-                    <div className = "logo-container">
-                        <img src = " " alt = "logo" />
-                        <h4> Andy </h4>
-                    </div>
+                    
                     <div className = "nav opt1">
                         <a href = " " target = "_self">  
                              <h4> Home </h4>
