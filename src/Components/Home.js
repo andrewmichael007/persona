@@ -8,19 +8,22 @@ const MyNavbar = () => {
                     <div>
                         <a>  
                              <h1> Home </h1>
-                        <a/>
+                        </a>
                     </div>
-
                     <div>
-                        <h1> Coming Soon </h1>
+                        <a>
+                            <h1> Coming Soon </h1>
+                        </a>
                     </div>
-
                     <div>
-                        <h1> Blog </h1>
+                        <a>
+                            <h1> Blog </h1>
+                        </a>
                     </div>
-
                     <div>
-                        <h1> Contact Me </h1>
+                        <a>
+                            <h1> Contact Me </h1>
+                        </a>
                     </div>
                   </nav>
         </header>
