@@ -3,11 +3,25 @@ import "../Styles/App.css";
 
 const MyNavbar = () => {
     return(
-        <ol>
-            <li> Banana </li>
-            <li> Guava </li>
-            <li> Pear </li>
-        </ol>
+        <header>
+                <nav className = "navbar">
+                    <div>
+                        <h1> Home </h1>
+                    </div>
+
+                    <div>
+                        <h1> Coming Soon </h1>
+                    </div>
+
+                    <div>
+                        <h1> Blog </h1>
+                    </div>
+
+                    <div>
+                        <h1> Contact Me </h1>
+                    </div>
+                  </nav>
+        </header>
     );
 };
 
