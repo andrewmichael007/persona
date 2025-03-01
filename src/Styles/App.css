@@ -18,7 +18,9 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-
+.logo-container{
+    display: flex;
+}
 /* .nav a{
     text-decoration: none;
     letter-spacing: 1px;
