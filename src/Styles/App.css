@@ -68,7 +68,7 @@
 }
 
 .footer-container{
-    min-height: 20vh; 
+    height: 20px; 
     background-color: white;
     margin: 5px 5px 8px 5px;
     box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.5);    
