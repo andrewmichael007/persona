@@ -6,6 +6,10 @@ const MyNavbar = () => {
         <header>
                 <nav className = "navbar-container">
                     <h1> this is a test </h1>
+                    <h2> this is a test two </h2>
+                    <h3> this is a third test  </h3>
+                    <h4> this is the fourth test </h4>
+                    <h5> this is the fifith test </h5>
         
                     <div className = "logo-container">
                         <img src = " " alt = "logo" />
