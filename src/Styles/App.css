@@ -22,7 +22,7 @@
 
 .options-container{
     display: flex;
-    gap: 2%;   
+    gap: 1%;   
     top: 0px;
     flex-wrap: wrap;
     flex: 1 0 auto;
