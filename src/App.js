@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
-// import './App.css';
+// import './App.css'
+
 import Test from "./components/test";
 
 function App() {
@@ -9,6 +10,6 @@ function App() {
     </div>
     
   );
-};
+}
 
 export default App;
