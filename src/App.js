@@ -1,6 +1,6 @@
 import Test from "./Components/Test";
 import MyNavbar from "./Components/Home";
-import "./styles/App.css";
+import "./Styles/App.css";
 
 
 const App = () => {
