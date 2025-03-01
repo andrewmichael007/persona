@@ -67,13 +67,15 @@
     background-color: white;
     box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.5);    
     border-radius: 10px;
-    margin-top: 5px;
+    margin: 10px;
 }
 
-/* .footer-container{
+.footer-container{
     height: 20px; 
     background-color: white;
     margin: 5px 5px 8px 5px;
     box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.5);    
     border-radius: 5px;
-} */
+    margin: 10px;
+
+}
