@@ -19,6 +19,7 @@
 .logo-container{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 /* .nav a{
     text-decoration: none;
