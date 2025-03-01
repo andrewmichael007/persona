@@ -60,9 +60,17 @@
 }
 
 .main-container{
-    min-height: 100vh;
+    min-height: 90vh;
     /* min-width: 100px; */
     background-color: white;
-    box-shadow: 2px 2px 8px black;
+    box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.5);    
     border-radius: 10px;
+}
+
+.footer-container{
+    height: 250px; 
+    background-color: white;
+    margin: 5px 5px 8px 5px;
+    box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.5);    
+    border-radius: 5px;
 }
