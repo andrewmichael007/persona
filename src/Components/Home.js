@@ -5,6 +5,7 @@ const MyNavbar = () => {
     return(
         <header>
                 <nav className = "navbar-container">
+                    <h1> this is a test </h1>
         
                     <div className = "logo-container">
                         <img src = " " alt = "logo" />
