@@ -1,5 +1,5 @@
 import Test from "./Components/Test";
-import MyNavbar from "./Components/Home"
+import MyNavbar from "./Components/Home";
 
 const App = () => {
     return(
