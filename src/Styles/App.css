@@ -4,7 +4,6 @@
  */
 .navbar-container{
     display: flex;
-    gap: 1%;   
     top: 0px;
     flex-wrap: wrap;
     flex: 1 0 auto;
@@ -22,7 +21,7 @@
 
 .options-container{
     display: flex;
-    gap: 1%;   
+    gap: 2%;   
     top: 0px;
     flex-wrap: wrap;
     flex: 1 0 auto;
@@ -33,9 +32,10 @@
     justify-content: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
-/* .nav a{
+
+.nav a{
     text-decoration: none;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: black;
-} */
+}
