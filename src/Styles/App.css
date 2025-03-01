@@ -5,6 +5,7 @@
 .navbar-container{
     display: flex;
     top: 0px;
+    gap: 2%;
     flex-wrap: wrap;
     flex: 1 0 auto;
     padding: 1%;
