@@ -1,7 +1,7 @@
-/* ol{
-    list-style: none;
+*{
+    box-sizing: border-box;
 }
- */
+
 .navbar-container{
     display: flex;
     top: 0px;
@@ -32,7 +32,6 @@
     align-items: center;
     justify-content: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    box-size: border-box;
 }
 
 .nav a{
