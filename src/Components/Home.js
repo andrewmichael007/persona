@@ -6,7 +6,9 @@ const MyNavbar = () => {
         <header>
                 <nav className = "navbar">
                     <div>
-                        <h1> Home </h1>
+                        <a>  
+                             <h1> Home </h1>
+                        <a/>
                     </div>
 
                     <div>
