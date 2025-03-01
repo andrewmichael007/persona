@@ -60,7 +60,7 @@
 }
 
 .main-container{
-    min-height: 90vh;
+    min-height: 50vh;
     /* min-width: 100px; */
     background-color: white;
     box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.5);    
@@ -68,7 +68,7 @@
 }
 
 .footer-container{
-    height: 250px; 
+    min-height: 20vh; 
     background-color: white;
     margin: 5px 5px 8px 5px;
     box-shadow: 5x 5px 10px rgba(0, 0, 0, 0.5);    
