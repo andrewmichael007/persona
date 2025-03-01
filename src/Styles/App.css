@@ -64,17 +64,16 @@
 
 .main-container{
     min-height: 100vh;
-    min-width: 50%;
+    width: 70%;
     background-color: green; 
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);    
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 2%;
 }
 
 .footer-container{
     height: 30vh; 
     background-color: blue;
-    margin: 1%;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);    
-    border-radius: 10px;
+    border-radius: 5px;
 }
