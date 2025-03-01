@@ -3,10 +3,10 @@ import "../Styles/App.css";
 
 const MyNavbar = () => {
     return(
-        <ol
-            <li>Banana</li>
-            <li>Guava</li>
-            <li>Pear</li>
+        <ol>
+            <li> Banana </li>
+            <li> Guava </li>
+            <li> Pear </li>
         </ol>
     );
 };
