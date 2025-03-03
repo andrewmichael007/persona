@@ -1,12 +1,14 @@
 import React from "react";
 import "../Styles/App.css";
+// import logo from "../assets/logo.svg";
 
-const MyNavbar = () => {
+
+const MyNavbar = ({toggleSidebar}) => {
     return(
         <header>
                 <nav className = "navbar-container">
         
-                    <div className="bars-container">
+                    <div className="bars-container" onClick={toggleSidebar}>
                         <div id="top-bar"></div>
                         <div id="mid-bar"></div>
                         <div id="bottom-bar"></div>
@@ -41,8 +43,19 @@ const MyNavbar = () => {
                         </div>
         
                     </div> 
+
+                    <div className = "toggle-container">
+                        <div id = "parent">
+
+                        </div>
+
+                        {/* <!--small inside  button--> */}
+                        <div id = "child">
+
+                        </div>
+                    </div>
         
-                 </nav>
+                </nav>
         </header>
                 
     );
@@ -63,4 +76,24 @@ const Footer = () => {
         </footer>
     );
 };
-export { MyNavbar, Main, Footer };
+  
+const Sidebar = ({ isOpen, onClose }) => {
+    return( 
+        <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+            <section className = "sidebar-head"> 
+                <h2> Profile </h2>
+
+            
+                {/* Bars for the close icon  */}
+                <div className = "bars2" onClick={onClose}>
+                    <div id = "forward-slash"></div>
+                    <div id = "back-slash"> </div>
+                </div> 
+
+            </section>
+        </div>  
+    );
+};
+
+
+export { MyNavbar, Main, Footer, Sidebar };
