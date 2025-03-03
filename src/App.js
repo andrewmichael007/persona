@@ -1,12 +1,30 @@
 // import Test from "./Components/Test";
-import { MyNavbar, Main, Footer} from "./Components/Home";
+import React, { useState } from "react";
+import { MyNavbar, Main, Footer, Sidebar} from "./Components/Home";
 import "./Styles/App.css";
 
 
 const App = () => {
+    // State to manage sidebar visibility
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    // Function to toggle the sidebar
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen); 
+    };
+    
+       // Function to close the sidebar
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
+    };
+
     return(
         <div>
-            <MyNavbar />
+            {/* Pass toggleSidebar function to MyNavbar */}
+            <MyNavbar toggleSidebar={toggleSidebar} />
+
+            {/* Sidebar component with toggle functionality */}
+            <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
 
             <Main />
 
