@@ -114,35 +114,41 @@
 }
 
 /* toggle-button */
-
-.toggle-container:hover{
-    position: relative;
-    cursor: pointer;
+.toggle-container {
+  position: relative;
+  width: 60px;   /* Overall width for the toggle */
+  height: 30px;  /* Overall height for the toggle */
+  cursor: pointer;
 }
 
-#parent{
-    position: absolute;
-    border: 1px solid black;
-    width: 36px;
-    height: 18px;
-    border-radius: 20px;
-    margin-top: 10px;
-    background-color: black;
-    opacity: 0.4;
-    /* margin-left: 10px; */
+/* The toggle track (background) */
+#parent {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 36px;
+  height: 18px;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: black;
+  opacity: 0.4;
+  transform: translateY(-50%);
 }
 
-#child{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    border-radius: 50%;
-    top: 31px;
-    margin-top: 9px;
-    margin-left: 10px; 
-    background-color: white;
+/* The toggle knob (small inside button) */
+#child {
+  position: absolute;
+  top: 50%;
+  left: 2px; /* starting offset */
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  transform: translateY(-50%);
+  transition: left 0.3s ease;
 }
+
 
 /* Sidebar Styling */
 .sidebar {
