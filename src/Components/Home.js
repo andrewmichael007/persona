@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/App.css";
-// import logo from "../assets/logo.svg";
+import logo from "../Assets/logo.svg";
+import profile from "../Assets/profile.png";
 
 
 const MyNavbar = ({toggleSidebar}) => {
@@ -15,7 +16,7 @@ const MyNavbar = ({toggleSidebar}) => {
                     </div> 
         
                     <div className = "logo-container">
-                        <img src = " " alt = "logo" />
+                        <img src = { logo }  alt = "logo" />
                         <h4> Andy </h4>
                     </div>
         
@@ -73,7 +74,7 @@ const Main = () => {
                         Computer Engineer Student | Tech Enthusiast
                     </p>
 
-                    <img src = " " alt = "profile-pic" />
+                    <img src = " " alt = "profile-picture" />
                 </data>
                 
             </aside>
@@ -93,7 +94,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     return( 
         <div className={`sidebar ${isOpen ? 'open' : ''}`}>
             <section className = "sidebar-head"> 
-                <img src = "../Assets/profile.png" alt = "profile-icon" />
+                <img src = { profile } alt = "profile-icon" />
                 <h2> Profile </h2>
 
                 {/* Bars for the close icon  */}
