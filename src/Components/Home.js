@@ -93,7 +93,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     return( 
         <div className={`sidebar ${isOpen ? 'open' : ''}`}>
             <section className = "sidebar-head"> 
-                <img src = "../Assest/profile.png" alt = "profile-icon"
+                <img src = "../Assets/profile.png" alt = "profile-icon" />
                 <h2> Profile </h2>
 
                 {/* Bars for the close icon  */}
