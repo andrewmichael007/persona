@@ -152,7 +152,7 @@
 
 /* Sidebar Styling */
 .sidebar {
-    position: fixed;
+/*     position: fixed;  */
     top: 3px;
     left: -300px;  /* Initially hidden */
     width: 250px;
