@@ -69,6 +69,7 @@
 .bars-container{
     padding: 0.5%;
     margin: 0%;
+    transition: background-color 1s,
 }
 
 #top-bar, #bottom-bar{
@@ -94,7 +95,7 @@
 .bars-container:hover{
    cursor: pointer;
    background-color: rgba(229, 228, 226, 0.5);
-   border: 1px solid black;
+   border-radius: 2px;
    padding: 0.5%;
 }
 
