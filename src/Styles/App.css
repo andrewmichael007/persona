@@ -116,11 +116,12 @@
 /* toggle-button */
 
 .toggle-container:hover{
+    position: relative;
     cursor: pointer;
 }
 
 #parent{
-    position: relative;
+    position: absolute;
     border: 1px solid black;
     width: 36px;
     height: 18px;
