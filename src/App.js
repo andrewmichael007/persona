@@ -1,6 +1,6 @@
 // import Test from "./Components/Test";
 import React, { useState } from "react";
-import { MyNavbar, Main, Footer, Sidebar} from "./Components/Home";
+import { MyNavbar, Main, Footer } from "./Components/Home";
 import "./Styles/App.css";
 
 
