@@ -193,18 +193,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgba(229, 228, 226, 0.5);
+    background-color: rgba(229, 228, 226, 0.5);
 }
 
 .bars2 {
   position: relative;
+  margin-left: 5px;
 }
 
 .bars2:hover{
     cursor: pointer;
     background-color: rgba(229, 228, 226, 0.5);
     border-radius: 5px;
-    padding: 0.5%;   
+    padding: 0%;   
 }
 
 #forward-slash,
@@ -229,7 +230,6 @@
 
 /* the sidebar's header styling*/
 .sidebar h2{
-    left: 50px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #333;
