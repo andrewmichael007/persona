@@ -16,7 +16,7 @@ const MyNavbar = ({toggleSidebar}) => {
                     </div> 
         
                     <div className = "logo-container">
-                        <img src = { logo }  alt = "logo" />
+                        <img src ={logo}  alt = "logo" />
                         <h4> Andy </h4>
                     </div>
         
@@ -94,7 +94,7 @@ const Sidebar = ({ isOpen, onClose }) => {
     return( 
         <div className={`sidebar ${isOpen ? 'open' : ''}`}>
             <section className = "sidebar-head"> 
-                <img src = { profile } alt = "profile-icon" />
+                <img src = {profile} alt = "profile-icon" />
                 <h2> Profile </h2>
 
                 {/* Bars for the close icon  */}
