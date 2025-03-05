@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-
-
 .navbar-container{
     display: flex;
     top: 0px;
@@ -68,6 +66,11 @@
 }
 
 /* sidebar click styling */
+.bars-container{
+    padding: 0.5%;
+    margin: 0%;
+}
+
 #top-bar, #bottom-bar{
   border: 1px solid black;
   width: 20px;
@@ -86,10 +89,7 @@
     margin: 0px 0px 4px 0px;
 }
 
-.bars-container{
-    padding: 0.5%;
-    margin: 1%;
-}
+
 
 .bars-container:hover{
    cursor: pointer;
