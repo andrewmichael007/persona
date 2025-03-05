@@ -64,7 +64,15 @@ const MyNavbar = ({toggleSidebar}) => {
 const Main = () => {
     return(
         <main className = "main-container">
+            <aside className = "info-holder">
+                <h1>
+                    Andrew Michael 
+                </h1>
 
+                <p>
+                    Computer Engineer Student | Tech Enthusiast
+                </p>
+            </aside>
         </main>
     );
 };
