@@ -28,7 +28,7 @@ const MyNavbar = ({toggleSidebar}) => {
                         </div>
                         <div className = "nav opt2">
                             <a href = " " target = "_self">
-                                <h4> Coming Soon </h4>
+                                <h4> Soon </h4>
                             </a>
                         </div>
                         <div className = "nav opt3">
@@ -38,7 +38,7 @@ const MyNavbar = ({toggleSidebar}) => {
                         </div>
                         <div className = "nav opt4">
                             <a href = " " target = "_self">
-                                <h4> Contact Me </h4>
+                                <h4> About </h4>
                             </a>
                         </div>
         
