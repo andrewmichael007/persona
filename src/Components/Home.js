@@ -61,31 +61,21 @@ const MyNavbar = ({toggleSidebar}) => {
     );
 };
 
-const Main = ({ isOpen, onClose }) => {
+const Main = () => {
     return(
         <main className = "main-container">
             <aside className = "info-holder">
-                    <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-                            <section className = "sidebar-head"> 
-                                    <h2> Profile </h2>
+                <data>
+                    <h1>
+                        Andrew Michael 
+                    </h1>
+                    <p>
+                        Computer Engineer Student | Tech Enthusiast
+                    </p>
 
-                                    {/* Bars for the close icon  */}
-                                    <div className = "bars2" onClick={onClose}>
-                                        <div id = "forward-slash"></div>
-                                        <div id = "back-slash"> </div>
-                                    </div> 
-                            </section>             
-                    </div>        
-                    <data>
-                        <h1>
-                            Andrew Michael 
-                        </h1>
-                        <p>
-                            Computer Engineer Student | Tech Enthusiast
-                        </p>
-
-                        <img src = " " alt = "profile-pic" />
-                   </data>  
+                    <img src = " " alt = "profile-pic" />
+                </data>
+                
             </aside>
         </main>
     );
@@ -99,23 +89,23 @@ const Footer = () => {
     );
 };
   
-// const Sidebar = ({ isOpen, onClose }) => {
-//     return( 
-//         <div className={`sidebar ${isOpen ? 'open' : ''}`}>
-//             <section className = "sidebar-head"> 
-//                 <h2> Profile </h2>
+const Sidebar = ({ isOpen, onClose }) => {
+    return( 
+        <div className={`sidebar ${isOpen ? 'open' : ''}`}>
+            <section className = "sidebar-head"> 
+                <h2> Profile </h2>
 
             
-//                 {/* Bars for the close icon  */}
-//                 <div className = "bars2" onClick={onClose}>
-//                     <div id = "forward-slash"></div>
-//                     <div id = "back-slash"> </div>
-//                 </div> 
+                {/* Bars for the close icon  */}
+                <div className = "bars2" onClick={onClose}>
+                    <div id = "forward-slash"></div>
+                    <div id = "back-slash"> </div>
+                </div> 
 
-//             </section>
-//         </div>  
-//     );
-// };
+            </section>
+        </div>  
+    );
+};
 
 
-export { MyNavbar, Main, Footer };
+export { MyNavbar, Main, Footer, Sidebar };
