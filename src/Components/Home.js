@@ -1,6 +1,6 @@
 import React from "react";
 import "../Styles/App.css";
-import logo from "../Assets/logo.svg";
+import logo from "../Assets/logo.png";
 import profile from "../Assets/profile.png";
 
 
