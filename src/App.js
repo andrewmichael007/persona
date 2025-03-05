@@ -23,12 +23,14 @@ const App = () => {
             {/* Pass toggleSidebar function to MyNavbar */}
             <MyNavbar toggleSidebar={toggleSidebar} />
 
-            {/* Sidebar component with toggle functionality */}
-            <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
+            <div className="main-container">
+                {/* Sidebar component with toggle functionality */}
+                <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} />
 
-            <Main />
-
-            <Footer />
+                <Main />
+            </div>
+        
+                <Footer /> 
         </div>
     );
 };
