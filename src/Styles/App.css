@@ -108,7 +108,6 @@
 .info-holder {
     min-height: 100vh;
     width: 80%; 
-    position: relative; 
     top: 3px;
     background-color: white;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);    
