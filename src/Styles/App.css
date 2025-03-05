@@ -167,11 +167,11 @@
 
 /* Sidebar Styling */
 .sidebar {
-/*     position: absolute;*/
+    position: absolute;
     left: -300px;  /* Initially hidden */
     width: 250px;
     min-height: 50vh;
-    top: 3px;
+    top: 17px;
 /*     background: rgba(255, 255, 255, 0.1);  Glass effect 
     backdrop-filter: blur(10px); */
     box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
