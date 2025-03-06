@@ -55,7 +55,6 @@ const MyNavbar = ({toggleSidebar}) => {
 
                         </div>
                     </div>
-        
                 </nav>
         </header>
                 
@@ -75,8 +74,7 @@ const Main = () => {
                     </p>
 
                     <img src = " " alt = "profile-picture" />
-                </data>
-                
+                </data>      
             </aside>
         </main>
     );
