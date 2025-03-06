@@ -65,16 +65,19 @@ const Main = () => {
     return(
         <main className = "main-container">
             <aside className = "info-holder">
-                <data>
+                <div className = "text">
                     <h1>
                         Andrew Michael 
                     </h1>
                     <p>
                         Computer Engineer Student | Tech Enthusiast
                     </p>
+                </div>
 
+                <div className = "profile-pic">
                     <img src = " " alt = "profile-picture" />
-                </data>      
+                </div>  
+
             </aside>
         </main>
     );
