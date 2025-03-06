@@ -67,9 +67,13 @@ const Main = () => {
         <main className = "main-container">
             <aside className = "info-holder">
                 <div className = "text">
+                    <h2>
+                        Adjei Michael 
+                    </h2>
                     <h1>
-                        Andrew Michael 
+                        Andrew
                     </h1>
+
                     <p>
                         Computer Engineer Student | Tech Enthusiast
                     </p>
