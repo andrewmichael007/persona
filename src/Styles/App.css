@@ -235,10 +235,9 @@
     font-size: 16px;
     font-weight: 400;
     font-family: 'Playfair Display', serif;  
-    margin-right: 10px;
+    margin-right: 3%;
 }
 
 .sidebar img{
-    width: 50px;
-    height: auto;
+    font-size: 20px;
 }
