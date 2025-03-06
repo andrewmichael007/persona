@@ -268,8 +268,9 @@
     font-weight: 700;
     margin: 0;
     /* Create a gradient text effect */
-    background: linear-gradient(90deg, #FF6FD8, #3813C2);
-    background-clip: text;
+    background: linear-gradient(90deg, #4b4b4b, #e0e0e0);
+/*     background: linear-gradient(90deg, #FF6FD8, #3813C2); */
+    background-clip: text; 
     -webkit-background-clip: text;
     color: transparent;
     letter-spacing: 2px;
@@ -291,6 +292,7 @@
   @keyframes fadeInDown {
     0% {
       opacity: 0;
+      transform: translateY(-500px);
       transform: translateY(-400px);
     }
     100% {
@@ -303,6 +305,7 @@
   @keyframes fadeInUp {
     0% {
       opacity: 0;
+      transform: translateY(500px);
       transform: translateY(400px);
     }
     100% {
