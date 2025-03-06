@@ -96,7 +96,7 @@
 
 .main-container{
     display: flex;
-    min-height: 50vh;
+    min-height: 60vh;
     top: 3px;
     background-color: white;
    /* border: 1px solid black; */
@@ -109,8 +109,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1 0 auto;
     flex-wrap: wrap;
-    min-height: 50vh;
+    min-height: 60vh;
     width: 77%; 
     top: 3px;
     background-color: white;
@@ -126,7 +127,7 @@
 } */
 
 .footer-container {
-  height: 25vh; 
+  min-height: 250vh; 
   background-color: white;
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -175,7 +176,7 @@
     position: absolute;
     left: -300px;  /* Initially hidden */
     width: 250px;
-    min-height: 50vh;
+    min-height: 60%;
     top: 120px;
 /*     background: rgba(255, 255, 255, 0.1);  Glass effect 
     backdrop-filter: blur(10px); */
@@ -266,7 +267,7 @@
     border: 1px solid black;
 }
 
-  .text h1 {
+  .text h2, h1{
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: 700;
@@ -281,6 +282,9 @@
     animation: fadeInDown 1.5s ease forwards;
   }
   
+  .text h1{
+    animation: fadeInLeft 1.5s ease forwards;
+  }
   /* Style for the paragraph */
   .text p {
     font-family: 'Roboto', sans-serif;
@@ -296,7 +300,7 @@
   @keyframes fadeInDown {
     0% {
       opacity: 0;
-      transform: translateY(-500px);
+      transform: translateY(-300px);
     }
     100% {
       opacity: 1;
@@ -304,11 +308,21 @@
     }
   }
   
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-300px); /* Start 50px to the left */
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
   /* Keyframe animation for the paragraph */
   @keyframes fadeInUp {
     0% {
       opacity: 0;
-      transform: translateY(500px);
+      transform: translateY(300px);
     }
     100% {
       opacity: 1;
