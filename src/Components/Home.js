@@ -2,7 +2,7 @@ import React from "react";
 import "../Styles/App.css";
 import logo from "../Assets/logo.png";
 import profile from "../Assets/profile.png";
-import profilePic from "../Assets/profilePic.jgp";
+import profilePic from "../Assets/profilePic.png";
 
 
 const MyNavbar = ({toggleSidebar}) => {
