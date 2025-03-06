@@ -111,6 +111,7 @@
     align-items: center;
     flex: 1 0 auto;
     flex-wrap: wrap;
+    gap: 5%;
     min-height: 60vh;
     width: 77%; 
     top: 3px;
@@ -127,7 +128,7 @@
 } */
 
 .footer-container {
-  min-height: 250vh; 
+  min-height: 25vh; 
   background-color: white;
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
