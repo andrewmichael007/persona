@@ -2,6 +2,7 @@ import React from "react";
 import "../Styles/App.css";
 import logo from "../Assets/logo.png";
 import profile from "../Assets/profile.png";
+import profilePic from "../Assets/profilePic.jgp";
 
 
 const MyNavbar = ({toggleSidebar}) => {
@@ -75,7 +76,7 @@ const Main = () => {
                 </div>
 
                 <div className = "profile-pic">
-                    <img src = " " alt = "profile-picture" />
+                    <img src={profilePic} alt = "profile-picture" />
                 </div>  
 
             </aside>
