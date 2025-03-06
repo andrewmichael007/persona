@@ -291,7 +291,7 @@
   @keyframes fadeInDown {
     0% {
       opacity: 0;
-      transform: translateY(-400px);
+      transform: translateY(-100px);
     }
     100% {
       opacity: 1;
@@ -303,7 +303,7 @@
   @keyframes fadeInUp {
     0% {
       opacity: 0;
-      transform: translateY(40px);
+      transform: translateY(100px);
     }
     100% {
       opacity: 1;
