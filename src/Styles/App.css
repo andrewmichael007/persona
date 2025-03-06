@@ -119,6 +119,8 @@
     margin: 0% 0% 0% auto; /* top, right, bottom: 1% and left: auto pushes it right */
 }
 
+r
+
 .footer-container{
     height: 30vh; 
     background-color: white;
@@ -244,3 +246,67 @@
     width: 25px;
     height: auto;
 }
+
+.text {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  /* Style for the heading */
+
+  .info-holder profile-pic img{
+    display: inline;
+    width : 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+  .text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    /* Create a gradient text effect */
+    background: linear-gradient(90deg, #FF6FD8, #3813C2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+    animation: fadeInDown 1.5s ease forwards;
+  }
+  
+  /* Style for the paragraph */
+  .text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #444;
+    letter-spacing: 1px;
+    opacity: 0.9;
+    animation: fadeInUp 1.5s ease forwards;
+  }
+  
+  /* Keyframe animation for the heading */
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Keyframe animation for the paragraph */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
