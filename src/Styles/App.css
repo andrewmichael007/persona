@@ -96,7 +96,7 @@
 
 .main-container{
     display: flex;
-    min-height: 100vh;
+    min-height: 80vh;
     top: 3px;
     background-color: white;
     border: 1px solid black;
@@ -110,7 +110,7 @@
     gap: 5%;
     flex-direction: row;
     flex-wrap: wrap;
-    min-height: 100vh;
+    min-height: 80vh;
     width: 77%; 
     top: 3px;
     background-color: white;
@@ -172,7 +172,7 @@
     position: absolute;
     left: -300px;  /* Initially hidden */
     width: 250px;
-    min-height: 50vh;
+    min-height: 30%;
     top: 120px;
 /*     background: rgba(255, 255, 255, 0.1);  Glass effect 
     backdrop-filter: blur(10px); */
