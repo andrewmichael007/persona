@@ -102,7 +102,6 @@ const Sidebar = ({ isOpen, onClose }) => {
                     <div id = "forward-slash"></div>
                     <div id = "back-slash"> </div>
                 </div> 
-
             </section>
         </div>  
     );
