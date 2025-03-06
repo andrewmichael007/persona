@@ -96,7 +96,7 @@
 
 .main-container{
     display: flex;
-    min-height: 80vh;
+    min-height: 50vh;
     top: 3px;
     background-color: white;
    /* border: 1px solid black; */
@@ -107,10 +107,10 @@
 
 .info-holder {
     display: flex;
-    gap: 5%;
-    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    min-height: 80vh;
+    min-height: 50vh;
     width: 77%; 
     top: 3px;
     background-color: white;
@@ -119,8 +119,14 @@
     margin: 0% 0% 0% auto; /* top, right, bottom: 1% and left: auto pushes it right */
 }
 
+/* .info-holder text{
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+} */
+
 .footer-container {
-  height: 30vh; 
+  height: 25vh; 
   background-color: white;
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -169,7 +175,7 @@
     position: absolute;
     left: -300px;  /* Initially hidden */
     width: 250px;
-    min-height: 30%;
+    min-height: 50vh;
     top: 120px;
 /*     background: rgba(255, 255, 255, 0.1);  Glass effect 
     backdrop-filter: blur(10px); */
@@ -254,7 +260,6 @@
   /* Style for the heading */
 
   .info-holder profile-pic img{
-    display: inline;
     width : 100px;
     height: auto;
     border-radius: 50%;
