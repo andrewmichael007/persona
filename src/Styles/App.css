@@ -232,13 +232,13 @@
 .sidebar-head h2{
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #333;
+    color: blue;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Playfair Display', serif;  
     margin-right: 2%;
 }
 
-.sidebar-head img{
+.info-holder img{
     font-size: 2px;
 }
