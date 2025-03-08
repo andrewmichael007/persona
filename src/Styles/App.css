@@ -61,7 +61,7 @@
   content: " ";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10px;
   width: 100%;
   height: 2px;
   background:  #333;
@@ -90,6 +90,7 @@
   margin: 0px 0px 4px 0px;
 
 }
+
 #mid-bar{
     border: 1px solid black;
     width: 10px;  
