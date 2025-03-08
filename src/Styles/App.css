@@ -41,13 +41,14 @@
     cursor: pointer; 
 }
 
-
+/* 
 .nav:active{
     transform: scaleX(1.2);
     transition: transform 1s ease;
-}
+} */
 
 .nav a{ 
+  position: relative;
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: uppercase;
