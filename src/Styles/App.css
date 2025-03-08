@@ -63,7 +63,7 @@
   position: absolute;
   left: -50%;
   bottom: 30px;
-  width: 100%;
+  width: 200%;
   height: 2px;
   background:  #333;
   transform: scaleX(0);
