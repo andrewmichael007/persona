@@ -57,7 +57,7 @@
     font-family: 'Playfair Display', serif;
 }
 
-.nav::after{
+.nav a::after{
   content: " ";
   position: absolute;
   left: 0;
@@ -69,7 +69,7 @@
   transition: transform 0.4s;
 }
 
-.nav:hover::after{
+.nav a:hover::after{
   transform: scaleX(1);
 }
 
