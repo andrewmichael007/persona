@@ -41,11 +41,9 @@
     cursor: pointer; 
 }
 
-/* 
-.nav:active{
-    transform: scaleX(1.2);
-    transition: transform 1s ease;
-} */
+.nav:hover{
+  opacity: 0.5;
+}
 
 .nav a{ 
   position: relative;
@@ -189,7 +187,10 @@
   transform: translateY(-50%);
   transition: left 0.3s ease;
 }
-
+/* When the toggle is active, move the knob to the right */
+.toggle-container.active #child {
+  left: 38px;  /* Adjust this value as needed */
+}
 
 /* Sidebar Styling */
 .sidebar {
