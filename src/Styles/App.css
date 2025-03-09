@@ -41,11 +41,9 @@
     cursor: pointer; 
 }
 
-/* 
-.nav:active{
-    transform: scaleX(1.2);
-    transition: transform 1s ease;
-} */
+.nav:hover{
+  opacity: 0.5;
+}
 
 .nav a{ 
   position: relative;
