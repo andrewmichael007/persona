@@ -189,6 +189,10 @@
   transition: left 0.3s ease;
 }
 
+/* When the toggle is active, move the knob to the right */
+.toggle-container.active #child {
+  left: 38px;  /* Adjust this value as needed */
+}
 
 /* Sidebar Styling */
 .sidebar {
