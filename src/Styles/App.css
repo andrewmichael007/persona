@@ -61,7 +61,7 @@
 .nav a h4::after{
   content: " ";
   position: absolute;
-  left: -70%;
+  left: -100%;
   bottom: 30px;
   width: 200%;
   height: 2px;
