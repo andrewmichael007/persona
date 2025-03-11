@@ -1,11 +1,10 @@
-import React from "react";
-import "../Styles/App.css";
+import React from "react";import "../Styles/App.css";
 import logo from "../Assets/logo.png";
 import profile from "../Assets/profile.png";
 import profilePic from "../Assets/profilePic.png";
 
 
-const MyNavbar = ({toggleSidebar}) => {
+const MyNavbar = ({ toggleSidebar }) => {
     return(
         <header>
                 <nav className = "navbar-container">
@@ -46,7 +45,7 @@ const MyNavbar = ({toggleSidebar}) => {
         
                     </div> 
 
-                    <div className = "toggle-container">
+                    <div className = "toggle-container" >
                         <div id = "parent">
 
                         </div>
@@ -67,6 +66,9 @@ const Main = () => {
         <main className = "main-container">
             <aside className = "info-holder">
                 <div className = "text">
+                    <h1 className = "wave">
+                        👋
+                    </h1>
                     <h2>
                         Adjei Michael 
                     </h2>
@@ -96,6 +98,7 @@ const Footer = () => {
     );
 };
   
+
 const Sidebar = ({ isOpen, onClose }) => {
     return( 
         <div className={`sidebar ${isOpen ? 'open' : ''}`}>
