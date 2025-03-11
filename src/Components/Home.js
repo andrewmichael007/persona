@@ -17,7 +17,7 @@ const MyNavbar = ({ toggleSidebar }) => {
         
                     <div className = "logo-container">
                         <img src ={logo}  alt = "logo" />
-                        <h4> Andy </h4>
+                        <h4> NDY </h4>
                     </div>
         
                     <div className = "options-container">
