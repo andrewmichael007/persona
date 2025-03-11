@@ -8,6 +8,7 @@ const App = () => {
     // State to manage sidebar visibility
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
+
     // Function to toggle the sidebar
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen); 
@@ -17,11 +18,15 @@ const App = () => {
     const closeSidebar = () => {
         setIsSidebarOpen(false);
     };
+    
 
     return(
         <div>
-            {/* Pass toggleSidebar function to MyNavbar */}
-            <MyNavbar toggleSidebar={toggleSidebar} />
+            <div>
+                {/* Pass toggleSidebar function to MyNavbar */}
+                <MyNavbar toggleSidebar={toggleSidebar} />
+            </div>
+            
 
             <div>
                 {/* Sidebar component with toggle functionality */}
