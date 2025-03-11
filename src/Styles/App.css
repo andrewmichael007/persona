@@ -24,6 +24,9 @@
     justify-content: flex-start;
     cursor: pointer;
 }
+.logo-container h4{
+  font-family: "Poppins";
+}
 
 .options-container{
     display: flex;
@@ -57,7 +60,7 @@
   font-family: 'Playfair Display', serif;
 }
 
-.nav a h4::after{
+.nav a::after{
   content: " ";
   position: absolute;
   left: -100%;
@@ -70,7 +73,7 @@
   transition: transform 0.4s;
 }
 
-.nav a h4:hover::after{
+.nav a:hover::after{
   transform: scaleX(1);
 }
 
@@ -127,7 +130,7 @@
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    gap: 5%;
+    gap: 2%;
     flex: 1 0 200;
     flex-wrap: wrap;
     min-height: 60vh;
@@ -138,12 +141,6 @@
     border-radius: 10px;
     margin: 0% 0% 0% auto; /* top, right, bottom: 1% and left: auto pushes it right */
 }
-
-/* .info-holder text{
-  display: flex;
-  flex-direction: column;
-  gap: 5%;
-} */
 
 .footer-container {
   min-height: 22vh; 
@@ -276,13 +273,14 @@
 }
 
 .text {
+
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
   
   /* Style for the heading */
 
-.info-holder profile-pic img{
+.text profile-pic img{
   width : 50px;
   height: auto;
   border-radius: 50%;
@@ -325,7 +323,7 @@
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translateX(-300px);
+    transform: translateX(300px);
   }
   100% {
     opacity: 1;
