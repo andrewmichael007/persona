@@ -84,7 +84,6 @@ const Main = () => {
                 <div className = "profile-pic">
                     <img src={profilePic} alt = "profile-picture" />
                 </div>  
-
             </aside>
         </main>
     );
