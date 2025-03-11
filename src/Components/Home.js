@@ -1,5 +1,6 @@
-import React from "react";import "../Styles/App.css";
-import logo from "../Assets/logo.png";
+import React from "react"; 
+import "../Styles/App.css";
+import logo from "../Assets/logo.svg";
 import profile from "../Assets/profile.png";
 import profilePic from "../Assets/profilePic.png";
 
@@ -9,16 +10,27 @@ const MyNavbar = ({ toggleSidebar }) => {
         <header>
                 <nav className = "navbar-container">
         
-                    <div className="bars-container" onClick={toggleSidebar}>
+                    <div className="bars-container" onClick={toggleSidebar} >
                         <div id="top-bar"></div>
                         <div id="mid-bar"></div>
                         <div id="bottom-bar"></div>
                     </div> 
-        
+
                     <div className = "logo-container">
                         <img src ={logo}  alt = "logo" />
                         <h4> NDY </h4>
+
+                        {/* dot beside logo name */}
+                        <div className = "dot"> 
+                        
+                        </div>
                     </div>
+
+                    {/* designing a divider kinda line */}
+                    <div className = "divider"> 
+
+                    </div>
+                
         
                     <div className = "options-container">
         
