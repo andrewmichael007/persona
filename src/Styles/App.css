@@ -28,6 +28,30 @@
   font-family: "Poppins";
 }
 
+.logo-container dot{
+  height: 15%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.3); /* Adjust transparency */
+  border: solid; /* Remove solid border */
+}
+
+.divider {
+  height: 75%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.3); /* Adjust transparency */
+  backdrop-filter: blur(10px); /* Apply blur */
+  border: solid; /* Remove solid border */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
+}
+
+/* 
+.divider { 
+  height:50px;
+  width: 2px;
+  border: 1px solid #333;
+  box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.2);
+} */
+
 .options-container{
     display: flex;
     gap: 10%;   
