@@ -310,8 +310,8 @@
   
 .text h1{
   animation: fadeInLeft 1.5s ease forwards;
+}
 
-  }
   /* Style for the paragraph */
 .text p {
     font-family: 'Roboto', sans-serif;
@@ -325,7 +325,7 @@
 
 .wave {
   animation: fadeInRight 1.5s ease forwards;
-}
+} 
 
 @keyframes fadeInRight {
   0% {
