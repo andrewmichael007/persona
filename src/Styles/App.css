@@ -39,6 +39,12 @@
     text-align: center;
     padding-left: 0% 1% 0% 1%;
     cursor: pointer; 
+    transition: opacity 0.6s;
+}
+
+.nav:hover{
+  opacity: 0.5;
+}
 }
 
 .nav:hover{
