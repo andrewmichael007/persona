@@ -175,7 +175,7 @@ const Footer = () => {
                     </div>
 
                 </div>
-                
+
                 <p> Copyright @ 2025 </p>
             </div>
         
@@ -200,6 +200,5 @@ const Sidebar = ({ isOpen, onClose }) => {
         </div>  
     );
 };
-
 
 export { MyNavbar, Main, Footer, Sidebar };
