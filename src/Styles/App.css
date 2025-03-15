@@ -419,7 +419,7 @@
   margin: 1%;
 }
 
-/* .footer-info-holder{
+.footer-info-holder{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -432,14 +432,14 @@
   align-items: center;
   justify-content: center;
   gap: 15%;
-} */
+}
 
 /* Social Media Icons */
-.socials-holder a {
+/* .socials-holder a {
     width: 45px;
     height: 45px;
     transition: transform 0.3s ease, opacity 0.3s ease;
-}
+} */
 
 /* Social Icons - Image */
 .socials-holder img {
