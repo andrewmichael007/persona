@@ -1,8 +1,8 @@
 
 /* Reset and global styles */
 * {
-  margin: 0;
-  padding: 0;
+/*   margin: 0;
+  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -425,8 +425,9 @@
 
 .footer-info-holder p {
   font-size: 1.1em;
-  color: #ffffff;
-  text-transform: uppercase;
+  background: linear-gradient(90deg, #4b4b4b, #e0e0e0);
+/*   color: #ffffff; */
+  text-transform: uppercase; 
   letter-spacing: 1px;
 }
 
