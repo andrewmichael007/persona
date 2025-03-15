@@ -317,7 +317,7 @@
   border-radius: 50%;
 }
 
-.text h2, h1, .footer-info-holder p{
+.text h2, h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: 700;
@@ -399,14 +399,25 @@
   
 
 /* styling the footer */
-
 .footer-container {
+    background: linear-gradient(135deg, #0f172a, #1e293b); /* Dark gradient */
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* .footer-container {
   min-height: 22vh; 
   background-color: white;
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin: 1%;
-}
+} */
 
 /* .footer-container {
   width: 100%;
