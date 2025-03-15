@@ -399,8 +399,8 @@
   
 
 /* styling the footer */
-.footer-container {
-    background: linear-gradient(135deg, #0f172a, #1e293b); /* Dark gradient */
+/* .footer-container {
+    background: linear-gradient(135deg, #0f172a, #1e293b);  Dark gradient 
     color: #ffffff;
     padding: 40px 0;
     text-align: center;
@@ -409,21 +409,19 @@
     bottom: 0;
     box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.3);
     animation: fadeIn 1s ease-in-out;
-}
+} */
 
-/* .footer-container {
+.footer-container {
   min-height: 22vh; 
   background-color: white;
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin: 1%;
-} */
+}
 
 .footer-info-holder{
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  flex: 1 0 auto;
   align-items: center;
 }
 
