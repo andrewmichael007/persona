@@ -471,7 +471,7 @@
 }
 
 /* Footer Glow Effect */
-.footer-container::after {
+/* .footer-container::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -483,7 +483,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
-
+ */
 /* Fade-in Animation for Footer */
 @keyframes fadeIn {
     from {
@@ -497,12 +497,12 @@
 }
 
 /* Responsive Design */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .socials-holder {
         gap: 10px;
     }
     .socials-holder a {
         width: 35px;
         height: 35px;
-    }
+    } */
 }
