@@ -412,6 +412,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
+  flex: 1 0 200;
 }
 
 .socials-holder{
@@ -419,7 +421,5 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  flex: 1 0 200;
   gap : 8%;
 }
