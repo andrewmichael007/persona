@@ -317,7 +317,7 @@
   border-radius: 50%;
 }
 
-.text h2, h1{
+.text h2, h1, .footer-info-holder p{
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: 700;
@@ -423,13 +423,6 @@
   align-items: center;
 }
 
-.footer-info-holder p {
-  font-size: 1.1em;
-  background: linear-gradient(90deg, #4b4b4b, #e0e0e0);
-/*   color: #ffffff; */
-  text-transform: uppercase; 
-  letter-spacing: 1px;
-}
 
 .socials-holder{
   display: flex;
