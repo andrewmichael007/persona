@@ -438,16 +438,6 @@
                 filter 0.2s ease;
 }
 
-/* Tablets & Small Laptops (≤ 1024px) */
-@media screen and (max-width: 1024px) {
-    .socials-holder {
-        gap: 8%;  /* Reduce space between icons */
-    }
-    .socials-holder a {
-        width: 45px; /* Scale down */
-        height: 45px;
-    }
-}
 
 /* Mobile Phones (≤ 768px) */
 @media screen and (max-width: 768px) {
