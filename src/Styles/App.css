@@ -6,11 +6,11 @@
   box-sizing: border-box;
 }
 
-body, html, #root {
+/* body, html, #root {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  overflow-y: auto;
+  overflow-y: auto; */
 /*   background-color: #1a1a1a; /* Dark theme for a tech vibe 
   color: #e0e0e0;
   font-family: 'Courier New', Courier, monospace;  Monospace for a coding feel */ 
@@ -417,11 +417,17 @@ body, html, #root {
   transition: opacity 0.5s ease-in-out; /* Smooth fade for loading 
 } */
 
-
 .footer-info-holder{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.footer-info-holder p {
+  font-size: 1.1em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .socials-holder{
@@ -431,3 +437,4 @@ body, html, #root {
   justify-content: center;
   gap : 15%;
 }
+  
