@@ -438,39 +438,6 @@
                 filter 0.2s ease;
 }
 
-/* for devices with big screens*/
-@media screen and (min-width: 1024px) { 
-      .socials-holder {
-        gap: 8%;  
-    }
-    .socials-holder a {
-        width: 45px;
-        height: 45px;
-    }
-}
-/* Mobile Phones (≤ 768px) */
-@media screen and (max-width: 768px) {
-     .socials-holder {
-        gap: 5%;  /* Reduce space between icons */
-    }
-    .socials-holder a {
-        width: 30px; /* Scale down */
-        height: 30px;
-    }
-}
-
-/* Extra Small Devices (≤ 480px) */
-@media screen and (max-width: 480px) {
-     .socials-holder {
-        gap: 2%;  /* Reduce space between icons */
-    }
-    .socials-holder a {
-        width: 25px; /* Scale down */
-        height: 25px;
-    }
-}
-
-
 /* Hover Effect on Icons */
 .socials-holder a:hover img {
     transform: scale(1.2);
