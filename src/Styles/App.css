@@ -427,10 +427,10 @@
 
 /* Social Icons - Image */
 .socials-holder img {
-  padding: 1%;
+  padding: 2%;
   border-radius: 50%;
-  transition: transform 0.2s ease, 
-              box-shadow 0.2s ease, 
+  transition: transform 0.1s ease, 
+              box-shadow 0.1s ease, 
               filter 0.2s ease;
 }
 
@@ -447,12 +447,34 @@
     filter: brightness(0.8);
 }
 
+/* Mobile Phones (≤ 768px) */
+@media screen and (max-width: 768px) {
+  .socials-holder {
+    gap: 5%;  /* Reduce space between icons */
+  }
+  .socials-holder img {
+    width: 30px; /* Scale down */
+    height: 30px;
+  }
+}
+
+/* Extra Small Devices (≤ 480px) */
+@media screen and (max-width: 480px) {
+  .socials-holder {
+    gap: 2%;  /* Reduce space between icons */
+  }
+  .socials-holder img {
+    width: 25px; /* Scale down */
+    height: 25px;
+  }
+}
+
 /* Footer Text */
-.footer-container p {
+/* .footer-container p {
     font-size: 14px;
     opacity: 0.8;
     transition: opacity 0.3s ease-in-out;
-}
+} */
 
 /* Footer Glow Effect */
 /* .footer-container::after {
