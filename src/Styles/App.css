@@ -401,9 +401,6 @@
 /* styling the footer */
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 0 200;
   min-height: 22vh; 
   background-color: white;
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
@@ -419,8 +416,12 @@
 
 .socials-holder{
   display: flex;
+  flex-wrap: wrap;
+  flex: 1 0 200;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap : 8%;
+/*   max-width: 100%;  /* ✅ Ensure it doesn't limit width */ */
+  width: auto;
 }
