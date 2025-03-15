@@ -419,5 +419,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  flex: 1 0 200;
   gap : 15%;
 }
