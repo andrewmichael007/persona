@@ -3,6 +3,14 @@ import "../Styles/App.css";
 import logo from "../Assets/logo.svg";
 import profile from "../Assets/profile.png";
 import profilePic from "../Assets/profilePic.png";
+import facebook from "../Assets/facebook.png";
+import github from "../Assets/github.png";
+import gmail from "../Assets/gmail.png";
+import instagram from "../Assets/instagram.png";
+import linkedin from "../Assets/instagram.png";
+import twitter from "../Assets/twitter.png";
+import whatsapp from "../Assets/whatsapp.png";
+import twitterx from "../Assets/twitterx.png";
 
 
 const MyNavbar = ({ toggleSidebar }) => {
@@ -104,6 +112,66 @@ const Main = () => {
 const Footer = () => {
     return(
         <footer className = "footer-container">
+            <div className = "footer-info-holder">
+                <p> Let's Connect ! </p>
+                <div className = "socials-holder">
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={whatsapp} alt = "linkedin"/>
+                        </a>
+                    </div>
+        
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={instagram} alt = "linkedin"/>
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={github} alt = "linkedin"/>
+                        </a>
+                    </div>
+
+
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={gmail} alt = "linkedin"/>
+                        </a>
+                    </div>
+
+                    
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={linkedin} alt = "linkedin"/>
+                        </a>
+                    </div>
+
+                    
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={twitterx} alt = "linkedin"/>
+                        </a>
+                    </div>
+
+                    
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={facebook} alt = "linkedin"/>
+                        </a>
+                    </div>
+
+                    
+                    <div>
+                        <a href = " " target = "_self">
+                            <img src ={twitter} alt = "linkedin"/>
+                        </a>
+                    </div>
+                   
+
+                </div>
+                <p> Copyright @ 2025 </p>
+            </div>
         
         </footer>
     );
