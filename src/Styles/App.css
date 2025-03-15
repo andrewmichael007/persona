@@ -422,12 +422,6 @@
   gap : 8%;
 }
 
-/* Social Media Icons */
-.socials-holder a {
-    width: 45px;
-    height: 45px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-}
 /* Social Icons - Image */
 .socials-holder img {
     width: 100%;
