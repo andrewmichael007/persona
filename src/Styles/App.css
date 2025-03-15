@@ -428,10 +428,9 @@
 .socials-holder{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
-  flex: 1 0 auto;
   gap: 15%;
 }
 
