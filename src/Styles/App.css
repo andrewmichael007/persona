@@ -1,6 +1,21 @@
-*{
-    box-sizing: border-box;
+
+/* Reset and global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+  background-color: #1a1a1a; /* Dark theme for a tech vibe */
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace; /* Monospace for a coding feel */
+}
+
 
 .navbar-container{
     display: flex;
@@ -385,23 +400,23 @@
 
 /* styling the footer */
 
-/* .footer-container {
+.footer-container {
   min-height: 22vh; 
   background-color: white;
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin: 1%;
 }
- */
-/* Footer container */
-.footer-container {
+
+/* .footer-container {
   width: 100%;
-  background: linear-gradient(90deg, #2c3e50, #3498db); /* Gradient for aesthetic */
+  background: linear-gradient(90deg, #2c3e50, #3498db); /* Gradient for aesthetic 
   padding: 20px 0;
   text-align: center;
-  position: relative; /* For loading overlay */
-  transition: opacity 0.5s ease-in-out; /* Smooth fade for loading */
-}
+  position: relative; /* For loading overlay 
+  transition: opacity 0.5s ease-in-out; /* Smooth fade for loading 
+} */
+
 
 .footer-info-holder{
   display: flex;
