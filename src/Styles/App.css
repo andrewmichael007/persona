@@ -438,13 +438,13 @@
                 filter 0.2s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .socials-holder {
         gap: 5px;  /* Reduce space between icons */
     }
     .socials-holder a {
-        width: 20px; /* Scale down */
-        height: 20px;
+        width: 25px; /* Scale down */
+        height: 25px;
     }
 }
 
