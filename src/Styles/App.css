@@ -427,6 +427,7 @@
 
 /* Social Icons - Image */
 .socials-holder img {
+  padding: 1%;
   border-radius: 50%;
   transition: transform 0.2s ease, 
               box-shadow 0.2s ease, 
