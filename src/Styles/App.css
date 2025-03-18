@@ -11,8 +11,8 @@ body, html, #root {
   padding: 0;
   min-height: 100vh;
   overflow-y: auto; 
-  background-color: #e0e0e0;  /* Dark theme for a tech vibe  */
-  color: #e0e0e0;
+  background-color: #030403;/* Dark theme for a tech vibe  */
+  color: #c1e3e7;
   font-family: 'Courier New', Courier, monospace;   /* Monospace for a coding feel */
 }
 
@@ -24,10 +24,10 @@ body, html, #root {
     flex: 1 0 auto;
     padding: 1%;
     margin: 1%;
-    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2); /* Light transparent color */
+    background: #030403; /* Light transparent color */
     backdrop-filter: blur(10px); /* Blur effect for glass */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
     border: 1px solid white;
@@ -46,7 +46,7 @@ body, html, #root {
 .logo-container dot{
   height: 15%;
   width: 2px;
-  background: rgba(255, 255, 255, 0.3); /* Adjust transparency */
+  background: #030403; /* Adjust transparency */
   border: solid; /* Remove solid border */
 }
 
@@ -59,13 +59,6 @@ body, html, #root {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3); /* Soft glow effect */
 }
 
-/* 
-.divider { 
-  height:50px;
-  width: 2px;
-  border: 1px solid #333;
-  box-shadow: 10px 10px 10px 10px rgba(255, 255, 255, 0.2);
-} */
 
 .options-container{
     display: flex;
@@ -93,7 +86,7 @@ body, html, #root {
   text-decoration: none;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #e0e0e0;
+  color: #c1e3e7;
   font-size: 16px;
   font-weight: 400;
   font-family: 'Playfair Display', serif;
