@@ -85,7 +85,6 @@ const MyNavbar = ({ toggleSidebar }) => {
 const Main = () => {
     return(
         <main className = "main-container">
-            <aside className = "info-holder">
                 <div className = "text">
                     <h1 className = "wave">
                         👋
@@ -105,7 +104,6 @@ const Main = () => {
                 <div className = "profile-pic">
                     <img src={profilePic} alt = "profile-picture" />
                 </div>  
-            </aside>
         </main>
     );
 };
