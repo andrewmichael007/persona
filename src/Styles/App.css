@@ -30,7 +30,7 @@ body, html, #root {
     background: #030403; /* Light transparent color */
     backdrop-filter: blur(10px); /* Blur effect for glass */
     -webkit-backdrop-filter: blur(10px); /* Safari support */
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .logo-container{
@@ -46,7 +46,7 @@ body, html, #root {
 .logo-container dot{
   height: 15%;
   width: 2px;
-  background: #030403; /* Adjust transparency */
+  background: #c1e3e7; /* Adjust transparency */
   border: solid; /* Remove solid border */
 }
 
@@ -99,7 +99,7 @@ body, html, #root {
   bottom: 30px;
   width: 200%;
   height: 2px;
-  background: #e0e0e0;
+  background: #c1e3e7;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.4s;
@@ -118,20 +118,20 @@ body, html, #root {
 }
 
 #top-bar, #bottom-bar{
-  border: 1px solid black;
+  border: 1px solid #c1e3e7;
   width: 20px;
   height: 1px;;
-  background-color: #333;
+  background-color: #c1e3e7;
   transition: transform 0.3s ease;
   margin: 0px 0px 4px 0px;
 
 }
 
 #mid-bar{
-    border: 1px solid black;
+    border: 1px solid #c1e3e7;
     width: 10px;  
     height: 1px;;
-    background-color: #333;
+    background-color: #c1e3e7;
     transition: transform 0.3s ease;
     margin: 0px 0px 4px 0px;
 }
@@ -148,12 +148,18 @@ body, html, #root {
 }
 
 .main-container{
-    display: flex;
-    min-height: 60vh;
-    top: 3px;
-    background-color:#121212;
-    border-radius: 10px; 
-    margin: 1% 3% 1% 3%; /* top, right, bottom: 1% and left: auto pushes it right */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  min-height: 60vh;
+  top: 3px;
+  background-color: #030403;
+  color:  #c1e3e7; 
+  border-radius: 10px; 
+  margin: 1% 3% 1% 3%; /* top, right, bottom: 1% and left: auto pushes it right */
 }
 
 /* toggle-button */
@@ -201,7 +207,7 @@ body, html, #root {
     position: absolute;
     left: -300px;  /* Initially hidden */
     width: 250px;
-    min-height: 60%;
+    min-height: 60vh;
     top: 120px;
 /*     background: rgba(255, 255, 255, 0.1);  Glass effect 
     backdrop-filter: blur(10px); */
@@ -247,7 +253,7 @@ body, html, #root {
   position: absolute;
   width: 18px;
   height: 2px; /* Thickness of the bars */
-  background-color: #333 /* Color of the bars */
+  background-color: #c1e3e7; /* Color of the bars */
 }
 
 #forward-slash {
@@ -279,22 +285,21 @@ body, html, #root {
 }
 
 .text {
-
   text-align: center;
   padding: 1rem;
 }
   
   /* Style for the heading */
 
-.text profile-pic img{
-  width : 50px;
+.main-container .profile-pic img{
+  max-width: 100%;
   height: auto;
   border-radius: 50%;
+  border: 1px solid black;
 }
 
 
-
-.text h2, h1 {
+.main-container .text h2, h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
     font-weight: 700;
@@ -379,11 +384,11 @@ body, html, #root {
 
 .footer-container {
   min-height: 22vh; 
-  background-color: #121212; /* Dark theme for a tech vibe  */
+  background-color: #030403; /* Dark theme for a tech vibe  */
   box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   margin: 1%;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .footer-info-holder{
