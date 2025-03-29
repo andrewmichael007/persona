@@ -1,0 +1,153 @@
+/* .header {
+  Add any header-specific styles here
+}
+*/
+.navbar { 
+  display: flex;
+  top: 0;
+  gap: 2%;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  padding: 1%;
+  margin: 1%;
+  /* box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5); */
+  border-radius: 5px;
+  align-items: center;
+  background: #252525;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Hamburger menu styles */
+.barsContainer {
+  padding: 0.5%;
+  margin: 0;
+  transition: background-color 0.7s, box-shadow 0.5s;
+  cursor: pointer;
+}
+
+.barsContainer:hover {
+  background-color: rgba(229, 228, 226, 0.5);
+  border-radius: 5px;
+  padding: 0.5%;
+}
+
+.barsContainer:active {
+  box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.topBar,
+.bottomBar {
+  border: 1px solid #c1e3e7;
+  width: 20px;
+  height: 1px;
+  background-color: #c1e3e7;
+  transition: transform 0.3s ease;
+  margin: 0 0 4px 0;
+}
+
+.midBar {
+  border: 1px solid #c1e3e7;
+  width: 10px;
+  height: 1px;
+  background-color: #c1e3e7;
+  transition: transform 0.3s ease;
+  margin: 0 0 4px 0;
+}
+
+/* Logo section */
+.logoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.logo {
+  /* Add logo-specific styles if needed */
+}
+
+.logoText {
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 0 8px; /* Adjust as needed */
+}
+
+.dot {
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background: #c1e3e7;
+  margin-left: 8px;
+}
+
+/* Divider */
+.divider {
+  height: 75%;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Navigation options */
+.optionsContainer {
+  display: flex;
+  gap: 10%;
+  top: 0;
+  flex-wrap: wrap;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.navItem {
+  text-align: center;
+  padding: 0 1%;
+  cursor: pointer;
+  transition: opacity 0.6s;
+}
+
+.navItem:hover {
+  opacity: 0.5;
+}
+
+.navLink {
+  position: relative;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #c1e3e7;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Playfair Display', serif;
+}
+
+.navLink::after {
+  content: " ";
+  position: absolute;
+  left: -100%;
+  bottom: 30px;
+  width: 200%;
+  height: 2px;
+  background: #c1e3e7;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.4s;
+}
+
+.navLink:hover::after {
+  transform: scaleX(1);
+}
+
+/* Toggle container
+.toggleContainer {
+  Add toggle container styles
+}
+
+.toggleParent {
+  Add parent toggle styles
+}
+
+.toggleChild {
+  Add child toggle styles
+} */
