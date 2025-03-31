@@ -31,12 +31,12 @@ const MyNavbar = () => {
                         </a>
                     </div>
                     <div className={styles.navItem}>
-                        <a href="/soon" target="_self" className={styles.navLink}>
+                        <a href="./Learning.jsx" target="_self" className={styles.navLink}>
                             <h4> Learning </h4>
                         </a>
                     </div>
                     <div className={styles.navItem}>
-                        <a href="/blog" target="_self" className={styles.navLink}>
+                        <a href="./about" target="_self" className={styles.navLink}>
                             <h4> About </h4>
                         </a>
                     </div>
