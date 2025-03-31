@@ -21,21 +21,6 @@ import  "./Components/Home/Footer/Footer.module.css";
 
 
 const App = () => {
-    // // State to manage sidebar visibility
-    // const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-
-
-    // // Function to toggle the sidebar
-    // const toggleSidebar = () => {
-    //     setIsSidebarOpen(!isSidebarOpen); 
-    // };
-    
-    //    // Function to close the sidebar
-    // const closeSidebar = () => {
-    //     setIsSidebarOpen(false);
-    // };
-    
-
     return(
         <div>
             <div>
@@ -43,7 +28,6 @@ const App = () => {
                 <MyNavbar />
             </div>
             
-
             <div>
                 {/* Sidebar component with toggle functionality */}
                 {/* <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} /> */}
