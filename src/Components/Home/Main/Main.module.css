@@ -14,6 +14,10 @@
 
 .textContainer {
     max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .name,
@@ -41,7 +45,7 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     margin-top: 1rem;
-    color: #c1e3e7;
+    color: #F0F0F0;
     letter-spacing: 1px;
     opacity: 0.9;
     animation: fadeInUp 1.5s ease forwards;
@@ -51,6 +55,7 @@
     animation: fadeInRight 1.5s ease forwards;
     font-size: 3rem;
     margin-bottom: 1rem;
+    color:  #F0F0F0;
 }
 
 .profileImageContainer {
