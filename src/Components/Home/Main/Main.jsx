@@ -7,8 +7,8 @@ const Main = () => {
         <main className={styles.main}>
             <div className={styles.textContainer}>
                 <h1 className={styles.waveAnimation}>👋</h1>
-                <h2 className={styles.name}>Adjei Michael</h2>
-                <h1 className={styles.surname}>Andrew</h1>
+                <h2 className={styles.name}> Adjei Michael </h2>
+                <h1 className={styles.surname}> Andrew </h1>
                 <p className={styles.description}>
                     Computer Engineer Student | Tech Enthusiast
                 </p>
