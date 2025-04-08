@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import React from "react";
 import styles from "./Navbar.module.css";
 import logo from "../../../Assets/logo.svg";
+
 
 const MyNavbar = () => {
     return(
@@ -11,7 +13,7 @@ const MyNavbar = () => {
                     <div className={styles.topBar}></div>
                     <div className={styles.midBar}></div>
                     <div className={styles.bottomBar}></div>
-                </div> 
+                </div>
 
                 {/* Logo section */}
                 <div className={styles.logoContainer}>
@@ -26,17 +28,17 @@ const MyNavbar = () => {
                 {/* Navigation options */}
                 <div className={styles.optionsContainer}>
                     <div className={styles.navItem}>
-                        <a href="/" target="_self" className={styles.navLink}>  
+                        <Link to ="/" target="_self" className={styles.navLink}>  
                             <h4> Home </h4>
-                        </a>
+                        </Link>
                     </div>
                     <div className={styles.navItem}>
-                        <a href="./Learning.jsx" target="_self" className={styles.navLink}>
+                        <Link to ="./Learning"  className={styles.navLink}>
                             <h4> Learning </h4>
-                        </a>
+                        </Link>
                     </div>
                     <div className={styles.navItem}>
-                        <a href="./about" target="_self" className={styles.navLink}>
+                        <a href="./about"  className={styles.navLink}>
                             <h4> About </h4>
                         </a>
                     </div>
