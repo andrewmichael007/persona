@@ -1,1 +1,30 @@
+import React from "react";
+import styles from "./Main.module.css";
+import profilePic from "../../../Assets/profilePic.png";
+
+const Main = () => {
+    return(
+        <main className={styles.main}>
+            <div className={styles.textContainer}>
+                <h1 className={styles.waveAnimation}>👋</h1>
+                <h2 className={styles.name}> Adjei Michael </h2>
+                <h1 className={styles.surname}> Andrew </h1>
+                <p className={styles.description}>
+                    Computer Engineer Student | Tech Enthusiast
+                </p>
+            </div>
+
+            <div className={styles.profileImageContainer}>
+                <img 
+                    src={profilePic} 
+                    alt="profile" 
+                    className={styles.profileImage} 
+                />
+            </div>  
+        </main>
+    );
+};
+
+export default Main;
+
 
