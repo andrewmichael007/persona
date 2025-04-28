@@ -16,18 +16,18 @@ const App = () => {
                 <MyNavbar />
             </div>
 
-            <Routes>
+{/*             <Routes>
                 <Route  path = "/learning" element = { <Test /> } />
-            </Routes>
+            </Routes> */}
             
             <div>
                 {/* Sidebar component with toggle functionality */}
                 {/* <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} /> */}
 
-                <Main />
+{/*                 <Main /> */}
             </div>
         
-                <Footer /> 
+{/*                 <Footer />  */}
         </Router>
     );
 };
