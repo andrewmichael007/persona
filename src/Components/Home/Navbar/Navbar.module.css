@@ -1,9 +1,10 @@
+/* display of small screens first */
+/* Navbar styles */
 
-.navbar { 
+@media screen and (max-width: 600px) {
+  .navbar {
     display: flex;
     top: 0;
-    gap: 2%;
-    flex-wrap: wrap;
     flex: 1 0 auto;
     padding: 1%;
     margin: 0%;
@@ -14,16 +15,8 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
   }
-
-.leftOptions{
-    display: flex;
-    justify-content: flex-start;
 }
 
-.rightOptions {
-    display: flex;
-    justify-content: flex-end;
-}
   
   /* Hamburger menu styles */
   .barsContainer {
