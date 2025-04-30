@@ -15,12 +15,14 @@
     -webkit-backdrop-filter: blur(10px);
   }
 
-.rightSide {
+.leftOptions{
     display: flex;
+    justify-content: flex-start;
 }
 
-.leftSide {
+.rightOptions {
     display: flex;
+    justify-content: flex-end;
 }
   
   /* Hamburger menu styles */
