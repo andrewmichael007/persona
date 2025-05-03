@@ -1,13 +1,16 @@
-// 📁 src/App.jsx
+// src/App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
-import About from './Components/About';
-import Learning from './Components/Learning';
-import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import About from './Pages/About';
+import Learning from './Pages/Learning';
+import Contact from './Pages/Contact';
 
-function App() {
+import './Styles/App.css';
+
+const App = () => {
   return (
     <Router>
       <Navbar />
@@ -17,8 +20,9 @@ function App() {
         <Route path="/learning" element={<Learning />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
-}
+};
 
 export default App;
