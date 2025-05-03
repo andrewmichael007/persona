@@ -1,36 +1,24 @@
-import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import "./Styles/App.css";
+// 📁 src/App.jsx
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import HeroSection from './Components/HeroSection';
+import About from './Components/About';
+import Learning from './Components/Learning';
+import Contact from './Components/Contact';
 
-
-import MyNavbar from "./Components/Home/Navbar/Navbar.jsx";
-// import "./Components/Home/Navbar/Navbar.module.css";
-
-
-
-
-const App = () => {
-    return(
-        <Router>
-            <div>
-                {/* Pass toggleSidebar function to MyNavbar */}
-                <MyNavbar />
-            </div>
-
-{/*             <Routes>
-                <Route  path = "/learning" element = { <Test /> } />
-            </Routes> */}
-            
-            <div>
-                {/* Sidebar component with toggle functionality */}
-                {/* <Sidebar isOpen={isSidebarOpen} onClose={closeSidebar} /> */}
-
-{/*                 <Main /> */}
-            </div>
-        
-{/*                 <Footer />  */}
-        </Router>
-    );
-};
+function App() {
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<HeroSection />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/learning" element={<Learning />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
