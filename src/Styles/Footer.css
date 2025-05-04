@@ -1,4 +1,4 @@
-/* .footer-container {
+.footer-container {
   width: 100%;
   background-color: #1a1a1a;
   padding: 40px 0;
@@ -44,9 +44,9 @@
   font-size: 0.9rem;
   color: #aaa;
 }
- */
 
-.footer {
+
+/* .footer {
   background-color: #0d0d0d;
   color: #ffffff;
   padding: 20px;
@@ -68,3 +68,4 @@
 .footer .social-links a:hover {
   color: #00bfff;
 }
+ */
