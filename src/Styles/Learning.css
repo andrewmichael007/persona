@@ -1,1 +1,88 @@
 
+.learning-container {
+  padding: 60px 10%;
+  background-color: #f5f6ff;
+  color: #1a1a1a;
+  animation: fadeIn 0.6s ease-in;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.learning-intro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.learning-intro p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.learning-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.learning-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.learning-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.learning-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.platform {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  background: #eef;
+  color: #444;
+  font-weight: 500;
+}
+
+.status.in-progress {
+  background-color: #fff5cc;
+  color: #b38b00;
+}
+
+.status.building {
+  background-color: #ccf2ff;
+  color: #007a99;
+}
+
+.status.reading {
+  background-color: #e6e6ff;
+  color: #5c5cc4;
+}
+
+.status.exploring {
+  background-color: #d9ffe6;
+  color: #268c5d;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
