@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Components/Navbar';
 import HeroSection from './Components/HeroSection';
-// import Footer from './Components/Footer';
+import Footer from './Components/Footer';
 // import About from './Pages/About';
 // import Learning from './Pages/Learning';
 // import Contact from './Pages/Contact';
@@ -15,12 +15,11 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<HeroSection />} />
-        <Route path="/navbar" element={<Navbar />} />
         {/* <Route path="/about" element={<About />} />
         <Route path="/learning" element={<Learning />} />
         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
-      {/* <Footer /> */}
+      {/ <Footer /> /}
     </Router>
   );
 };
