@@ -1,1 +1,97 @@
 
+.about-container {
+  padding: 60px 10%;
+  background-color: #f4f4fc;
+  color: #222;
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeIn 0.6s ease-in;
+}
+
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.about-text {
+  flex: 1 1 55%;
+}
+
+.about-heading {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.skills-heading {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #ffffff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.1);
+}
+
+.about-visuals {
+  flex: 1 1 35%;
+  text-align: center;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.fun-facts p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  background: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text, .about-visuals {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-bottom: 20px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
