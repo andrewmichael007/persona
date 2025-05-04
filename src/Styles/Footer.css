@@ -1,4 +1,4 @@
-.footer-container {
+/* .footer-container {
   width: 100%;
   background-color: #1a1a1a;
   padding: 40px 0;
@@ -43,4 +43,28 @@
 .copyright {
   font-size: 0.9rem;
   color: #aaa;
+}
+ */
+
+.footer {
+  background-color: #0d0d0d;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.footer .social-links {
+  margin-top: 10px;
+}
+
+.footer .social-links a {
+  margin: 0 10px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #00bfff;
 }
