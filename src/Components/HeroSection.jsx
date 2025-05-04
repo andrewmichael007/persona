@@ -5,10 +5,10 @@ import '../Styles/HeroSection.css';
 const HeroSection = () => {
   return (
     <section className="hero-section">
-      <h1 className="hero-title">Hello, I'm</h1>
-      <h1 className="hero-name">[Your Name]</h1>
+      <h1 className="hero-title"> Michael Adjei </h1>
+      <h1 className="hero-name"> Andrew </h1>
       <p className="hero-subtitle">
-        Computer Engineering Student passionate about building innovative solutions.
+        Computer Engineering Student || Tech Enthusiast
       </p>
 
       <div className="hero-buttons">
