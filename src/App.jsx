@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/learning" element={<Learning />} />
 {/*         <Route path="/contact" element={<Contact />} /> */}
       </Routes>
-      <Footer /> 
+      <Footer />
     </Router>
   );
 };
