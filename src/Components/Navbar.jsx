@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <header className="navbar">
       <div className="navbar__logo">
-        <Link to="/">DevPortfolio</Link>
+        <Link to="/"> mitchPersona </Link>
       </div>
       <nav className="navbar__links">
         <Link to="/">Home</Link>
