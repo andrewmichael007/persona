@@ -24,20 +24,28 @@
   color: #1a1a1a;
 }
 
-.skills-heading {
+.about-heading > p{
+  font-family: Lato;
+  font-size: 1.1rem;
+  font-weight: 500px;
+
+}
+
+
+.skills-heading, .frameworks-heading{
   margin-top: 30px;
   margin-bottom: 10px;
   font-size: 1.2rem;
   color: #444;
 }
 
-.skills-list {
+.skills-list, .frameworks-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.skill-tag {
+.skill-framework-tag {
   background-color: #ffffff;
   padding: 8px 14px;
   border-radius: 10px;
@@ -46,7 +54,7 @@
   transition: transform 0.2s ease;
 }
 
-.skill-tag:hover {
+.skill-framework-tag:hover {
   transform: scale(1.1);
 }
 

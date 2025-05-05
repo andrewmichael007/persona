@@ -4,9 +4,12 @@ import profile from '../Assets/profilePic.png'; // Optional image of yourself
 
 const About = () => {
   const skills = [
-    'JavaScript', 'React', 'TypeScript', 'Python', 'C++',
-    'Data Structures', 'Algorithms', 'Git'
+     "HTML5", "CSS3", "JavaScript", "PHP", "Python", "MySQL", "MongoDB" , 
   ];
+
+  const frameworks = [
+    "React", "Node.js", "Express.js", "Laravel", "Django"
+ ];
 
   return (
     <section className="about-container">
@@ -14,19 +17,33 @@ const About = () => {
         <div className="about-text">
           <h2 className="about-heading">About Me</h2>
           <p>
-            I'm a Computer Engineering student with a passion for building innovative solutions
-            to complex problems. My journey in technology started when I was young, and I've been
-            exploring various aspects of software and hardware development since then.
+            I respond to Mitch.
           </p>
+          <p> 
+              I’m a passionate learner currently exploring best practices and emerging trends in the tech industry. My interests lie in:
+
+              System Design and building scalable web applications.
+          </p>
+
           <p>
-            Currently focused on web technologies and embedded systems, I'm always looking to
-            expand my knowledge and take on new challenges. When I'm not coding, you can find me
-            participating in hackathons, contributing to open source, or exploring the latest tech trends.
+            Machine Learning, with a focus on Computer Vision
+
+            Healthcare Technology, where I aim to apply ML and CV for real-world impact
+
+            I’m continuously growing, experimenting, and working toward becoming a well-rounded computer engineer who builds solutions that matter.
           </p>
-          <h3 className="skills-heading">Skills</h3>
+
+          <h3 className="skills-heading"> Tech Stack </h3>
           <div className="skills-list">
             {skills.map((skill, index) => (
-              <span className="skill-tag" key={index}>{skill}</span>
+              <span className="skill-framework-tag" key={index}>{skill}</span>
+            ))}
+          </div>
+
+          <h3 className = "frameworks-heading"> Frameworks </h3>
+          <div className = "frameworks-list">
+            {frameworks.map((framework, index) => (
+              <span className = "skill-framework-tag" key={index}>{framework}</span>
             ))}
           </div>
         </div>
@@ -34,9 +51,7 @@ const About = () => {
         <div className="about-visuals">
           <img src={profile} alt="Mitch Profile" className="profile-img" />
           <div className="fun-facts">
-            <p>🧩 Loves solving puzzles</p>
             <p>🎵 Hip-hop head + tech enthusiast</p>
-            <p>🎥 Into videography & photography</p>
           </div>
         </div>
       </div>

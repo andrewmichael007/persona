@@ -1,33 +1,51 @@
 
 /* src/styles/HeroSection.css */
 
+/* styling the entire hero section */
 .hero-section {
   text-align: center;
-  padding: 100px 20px;
-  background-color: #f9f9f9;
+  padding: 100px 0px;
+  background-color: #f4f4fc;
+  animation: fadeIn 0.6s ease-in;
 }
 
-.hero-title {
-  font-size: 2.5rem;
-  color: #1e90ff;
-  margin-bottom: 0;
+.bye-emoji {
+  font-size: 50px;
+  transition: transform 0.3s;
 }
 
-.hero-name {
+.bye-emoji:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+.name {
   font-size: 3rem;
-  color: #4169e1;
-  font-weight: 700;
+  color: #800080;
+  margin-bottom: 0;
+  font-family: Bebas Neue;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.name {
+  font-size: 3rem;
+  color: #800080;
+  font-weight: 900;
   margin-top: 10px;
+  font-family: Anton;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .hero-subtitle {
-  font-size: 1.1rem;
+  font-size: 2rem;
   color: #555;
   margin: 20px auto;
-  max-width: 600px;
+  max-width: 800px;
+  font-family: Lato;
 }
 
-.hero-buttons {
+/* .hero-buttons {
   margin-top: 30px;
 }
 
@@ -58,7 +76,7 @@
 
 .secondary-btn:hover {
   background-color: #d4d4d4;
-}
+} */
 
 .scroll-down {
   margin-top: 50px;
@@ -78,11 +96,11 @@
 }
 
 @media screen and (max-width: 768px) {
-  .hero-title {
+  .name {
     font-size: 2rem;
   }
 
-  .hero-name {
+  .name {
     font-size: 2.4rem;
   }
 
