@@ -6,7 +6,7 @@ import HeroSection from './Components/HeroSection';
 import Footer from './Components/Footer';
 import About from './Pages/About';
 import Learning from './Pages/Learning';
-// import Contact from './Pages/Contact';
+import Contact from './Pages/Contact';
 import './Styles/App.css';
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
         <Route path="/" element={<HeroSection />} />
         <Route path="/about" element={<About />} />
         <Route path="/learning" element={<Learning />} />
-{/*         <Route path="/contact" element={<Contact />} /> */}
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
