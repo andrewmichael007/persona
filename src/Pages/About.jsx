@@ -3,12 +3,12 @@ import '../Styles/About.css';
 import profile from '../Assets/profilePic.png'; // Optional image of yourself
 
 const About = () => {
-  const skills = [
-     "HTML5", "CSS3", "JavaScript", "PHP", "Python", "MySQL", "MongoDB" , 
+  const techStack = [
+     "HTML5", "CSS3", "JavaScript", "PHP", "Python", "MySQL", "MongoDB" 
   ];
 
   const frameworks = [
-    "React", "Node.js", "Express.js", "Laravel", "Django"
+    "React", "Node.js", "Express.js", "Next.js"
  ];
 
   return (
@@ -17,26 +17,23 @@ const About = () => {
         <div className="about-text">
           <h2 className="about-heading">About Me</h2>
           <p>
-            I respond to Mitch.
+            I respond to Mitch. <br>
           </p>
           <p> 
               I’m a passionate learner currently exploring best practices and emerging trends in the tech industry. My interests lie in:
-
-              System Design and building scalable web applications.
+              System Design and building scalable web applications. <b>
           </p>
 
           <p>
             Machine Learning, with a focus on Computer Vision
-
             Healthcare Technology, where I aim to apply ML and CV for real-world impact
-
             I’m continuously growing, experimenting, and working toward becoming a well-rounded computer engineer who builds solutions that matter.
           </p>
 
           <h3 className="skills-heading"> Tech Stack </h3>
           <div className="skills-list">
-            {skills.map((skill, index) => (
-              <span className="skill-framework-tag" key={index}>{skill}</span>
+            {skills.map((techStack, index) => (
+              <span className="skill-framework-tag" key={index}>{techStack}</span>
             ))}
           </div>
 
