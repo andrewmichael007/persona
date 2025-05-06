@@ -14,7 +14,7 @@
   justify-content: space-between;
 }
 
-.about-text {
+.about {
   flex: 1 1 55%;
 }
 
@@ -24,7 +24,7 @@
   color: #1a1a1a;
 }
 
-.about-text p {
+.about p {
   font-size: 16px;
   color: #555;
   line-height: 1.6;
@@ -89,12 +89,12 @@
     align-items: center;
   }
 
-  .about-text, .about-visuals {
+  .about, .about-visuals {
     width: 100%;
     text-align: center;
   }
 
-  .about-text {
+  .about {
     padding-bottom: 20px;
   }
 }
