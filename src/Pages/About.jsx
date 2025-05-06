@@ -1,8 +1,11 @@
 import React from 'react';
 import '../Styles/About.css';
-import profile from '../Assets/profilePic.png'; // Optional image of yourself
+// importing profile picture
+import profile from '../Assets/profilePic.png'; 
 
+// creating an arrow function to hold the about page
 const About = () => {
+  
   const techStack = [
      "HTML5", "CSS3", "JavaScript", "PHP", "Python", "MySQL", "MongoDB" 
   ];
@@ -15,7 +18,7 @@ const About = () => {
     <section className="about-container">
       <div className="about-grid">
         <div className="about-text">
-          <h2 className="about-heading">About Me</h2>
+          <h2 className="about-heading"> About Me </h2>
           <p>
             I respond to Mitch. 
           </p>
@@ -48,7 +51,7 @@ const About = () => {
         <div className="about-visuals">
           <img src={profile} alt="Mitch Profile" className="profile-img" />
           <div className="fun-facts">
-            <p>🎵 Hip-hop head + tech enthusiast</p>
+            <p>tech enthusiast   + 🎵 music head </p>
           </div>
         </div>
       </div>
