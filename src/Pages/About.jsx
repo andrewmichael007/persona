@@ -32,8 +32,8 @@ const About = () => {
 
           <h3 className="skills-heading"> Tech Stack </h3>
           <div className="skills-list">
-            {skills.map((techStack, index) => (
-              <span className="skill-framework-tag" key={index}>{techStack}</span>
+            {techStack.map((stack, index) => (
+              <span className="skill-framework-tag" key={index}>{stack}</span>
             ))}
           </div>
 
