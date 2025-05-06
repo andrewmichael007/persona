@@ -17,11 +17,11 @@ const About = () => {
         <div className="about-text">
           <h2 className="about-heading">About Me</h2>
           <p>
-            I respond to Mitch. <br>
+            I respond to Mitch. 
           </p>
           <p> 
               I’m a passionate learner currently exploring best practices and emerging trends in the tech industry. My interests lie in:
-              System Design and building scalable web applications. <b>
+              System Design and building scalable web applications. 
           </p>
 
           <p>
