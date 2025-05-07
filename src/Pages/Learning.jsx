@@ -21,10 +21,10 @@ const learningItems = [
     link: '#'
   },
   {
-    title: 'CS50 - Harvard Intro to CS',
-    platform: 'edX',
-    status: 'Exploring',
-    link: 'https://cs50.harvard.edu/x/'
+    title: "Yet to come...",
+    // platform: 'edX',
+    // status: 'Exploring',
+    // link: 'https://cs50.harvard.edu/x/'
   }
 ];
 
@@ -32,10 +32,9 @@ const Learning = () => {
   return (
     <section className="learning-container">
       <div className="learning-intro">
-        <h2>What I'm Learning</h2>
+        <h2> Learning Me </h2>
         <p>
-          I’m constantly evolving and pushing boundaries in both software and hardware. Below are some of the things I’m diving into right now —
-          from online courses to hands-on projects and technical books.
+          I’m currently learning and exploring the following topics. ....
         </p>
       </div>
 
