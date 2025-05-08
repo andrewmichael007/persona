@@ -19,8 +19,8 @@
 }
 
 .persona {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.07);
-  border-radius: 16px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+  border-radius: 16px; */
   padding: 2%;
   margin-bottom: 5%;
 }
@@ -42,8 +42,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.07);
-  border-radius: 16px;
+  /* box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+  border-radius: 16px; */
   padding: 2%;
 
 }
@@ -94,8 +94,8 @@
   font-size: 0.95rem;
   background: #fff;
   padding: 6px 12px;
-  border-radius: 8px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  /* border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05); */
 }
 
 /* Responsive */
