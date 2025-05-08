@@ -56,7 +56,10 @@ const About = () => {
         <div className="visuals">
           <img src={profile} alt="Mitch Profile" className="profile-img" />
           <div className="fun-facts">
-            <p> 🤖 tech enthusiast   + 🎵 music head </p>
+            <p> 🙇 GodSpeed </p>
+            <p> 🤖 tech enthusiast  </p>
+            <p> 🎵 music head </p>
+            <p> 🎹 pianist + 🥁drummer </p>
           </div>
         </div>
       </div>
