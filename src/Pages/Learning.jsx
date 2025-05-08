@@ -20,7 +20,7 @@ const learningItems = [
     status: 'Reading',
     link: '#'
   },
-];g
+];
 
 const Learning = () => {
   return (
