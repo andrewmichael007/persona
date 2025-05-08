@@ -70,7 +70,7 @@ const Learning = () => {
       <div className="learning-intro">
         <h2> Learning Me </h2>
         <p>
-          I’m currently learning and exploring the following topics ....
+          Explore my journey with me!
         </p>
       </div>
 
