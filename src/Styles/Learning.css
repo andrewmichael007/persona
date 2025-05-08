@@ -1,8 +1,8 @@
 
 .learning-container {
   padding: 60px 10%;
-  background-color: #f5f6ff;
-  color: #1a1a1a;
+  background-color: #f4f4fc;
+  color: #222;
   animation: fadeIn 0.6s ease-in;
   font-family: 'Segoe UI', sans-serif;
 }
