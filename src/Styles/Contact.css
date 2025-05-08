@@ -6,6 +6,7 @@
   max-width: 700px;
   margin: auto;
   text-align: center;
+  animation: fadeIn 0.6s ease-in;
 }
 
 .contact-title {
