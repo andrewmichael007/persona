@@ -3,15 +3,39 @@ import '../Styles/Learning.css';
 
 const learningItems = [
   {
-    title: 'Machine Learning by Andrew Ng',
-    platform: 'Coursera',
+    title: "Revived1.0: Portfolio",
+    platform: "Personal Project",
     status: 'In Progress',
-    link: 'https://www.coursera.org/learn/machine-learning'
+    link: "https://www.coursera.org/learn/machine-learning"
   },
   {
-    title: 'Full Stack MERN Development',
-    platform: 'Personal Project',
+    title: "Health-labs1.0 : AI-Powered Health Chatbot",
+    platform: "Personal Project",
     status: 'Building',
+    link: "https://www.coursera.org/learn/machine-learning"
+  },
+  {
+    title: "Machine Learning",
+    platform: "Coursera",
+    status: 'In Progress',
+    link: "https://www.coursera.org/learn/machine-learning"
+  },
+  {
+    title: "Full Stack MERN Development",
+    platform: "Book",
+    status: "Learning",
+    link: '#'
+  },
+  {
+    title: "CRUD App",
+    platform: "Youtube",
+    status: "Building",
+    link: '#'
+  },
+  {
+    title: "Designing Data Intensive Applications by Martin Kleppmann",
+    platform: "Book",
+    status: "Reading",
     link: '#'
   },
   {
@@ -19,6 +43,24 @@ const learningItems = [
     platform: 'Book',
     status: 'Reading',
     link: '#'
+  },
+  {
+    title: "Head First Design Patterns: Building Extensible and Maintainable Softwares",
+    platform: "Book",
+    status: "Reading",
+    link: '#'
+  },
+  {
+    title: "Computational Science Distilled by  Wladston Ferreira Filho",
+    platform: "Book",
+    status: "Reading",
+    link: '#'
+  },
+  {
+    title: "Mastering System Design",
+    platform: "Online Article",
+    status: "Learning",
+    link: "https://blog.algomaster.io/p/30-system-design-concepts"
   },
 ];
 
