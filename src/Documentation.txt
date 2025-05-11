@@ -6,3 +6,4 @@ version 1.0 fixes.
 3. Change the font style.
 4. Nice animation on the home screen to give the visitor a good first impression.
 5. Make us of some icons.
+6. Lay emphasis on which page we are currently working on the menu items.
