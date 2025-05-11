@@ -24,18 +24,19 @@
 
 /* styling for the links */
 .links a {
+  text-decoration: none;
   margin-left: 30px;
   font-size: 1.1rem;
   color: #f9f9f9;
-  transition: color 0.4s ease,
-              opacity 0.6s ease;
+  transition: opacity 0.6s ease,
+              transform 1s ease;
   font-family: Montserrat;
   letter-spacing: 2px;
 }
 
 /* styling for hovering on navbar items */
 .links a:hover {
-  color: #800080;
+  transform: scaleX(1.1);
 }
 
 /* styling for when the navbar links are clicked */
