@@ -13,7 +13,7 @@ const Navbar = () => {
     <header className="navbar">
       {/* logo section */}
       <div className="logo">
-        <Link to="/" onClick={closeMenu}>portfolio1.0</Link>
+        <Link to="/" onClick={closeMenu}> Me </Link>
       </div>
 
       {/* hamburger icon */}
