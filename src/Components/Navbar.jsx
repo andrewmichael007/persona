@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
+import { logo1 } from '../Assets/logo1.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
     <header className="navbar">
       {/* logo section */}
       <div className="logo">
-        <Link to="/" onClick={closeMenu}> Me </Link>
+        <Link to="/" onClick={closeMenu}> <img src={logo1} alt = "logo" /> </Link>
       </div>
 
       {/* hamburger icon */}
