@@ -92,6 +92,18 @@
   transform: rotate(-45deg) translateY(-8px);
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 /* Media Query: Mobile Screens */
 @media screen and (max-width: 768px) {
   .hamburger {
