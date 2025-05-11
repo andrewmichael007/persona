@@ -27,9 +27,9 @@
   transition: color 0.3s ease;
 }
 
-.links a:hover {
+/* .links a:hover {
   color: #00bcd4;
-}
+} */
 
 @media (max-width: 600px) {
   .links {
