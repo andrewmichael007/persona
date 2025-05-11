@@ -1,27 +1,37 @@
 // src/Components/Navbar.jsx
-import React from 'react';
-//import link from react-router-dom because our navbar items are goin' to be links
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink, Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
 
 const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const closeMenu = () => setMenuOpen(false);
+
   return (
-    //return a semantic tag of header
     <header className="navbar">
       {/* logo section */}
       <div className="logo">
-        <Link to="/"> portfolio1.0 </Link>
+        <Link to="/" onClick={closeMenu}>portfolio1.0</Link>
       </div>
-      {/* a list of nav items */}
-      <nav className="links">
-        <Link to="/"> Home </Link>
-        <Link to="/about"> About </Link>
-        <Link to="/learning"> Learning </Link>
-        <Link to="/contact"> Contact </Link>
+
+      {/* hamburger icon */}
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+        <div className={`bar ${menuOpen ? 'open' : ''}`}></div>
+      </div>
+
+      {/* nav links */}
+      <nav className={`nav-links ${menuOpen ? 'active' : ''}`}>
+        <NavLink to="/" onClick={closeMenu} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> Home </NavLink>
+        <NavLink to="/about" onClick={closeMenu} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> About </NavLink>
+        <NavLink to="/learning" onClick={closeMenu} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> Learning </NavLink>
+        <NavLink to="/contact" onClick={closeMenu} className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> Contact </NavLink>
       </nav>
     </header>
   );
 };
 
 export default Navbar;
-
