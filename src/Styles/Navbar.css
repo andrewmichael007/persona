@@ -17,8 +17,9 @@
   font-weight: bold;
   font-size: 1.4rem;
   color: #f9f9f9;
-  font-family: Playfair DisplayItaliana;
+  font-family: Lobster; 
   text-decoration: none;
+  letter-spacing: 2px;
 }
 
 /* Nav links container */
@@ -72,7 +73,6 @@
   opacity: 0.2;
 }
 
-
 .bar {
   width: 15px;
   height: 3px;
@@ -91,16 +91,6 @@
   transform: rotate(-45deg) translateY(-8px);
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* Media Query: Mobile Screens */
 @media screen and (max-width: 768px) {
@@ -115,11 +105,11 @@
     right: 5%;
     flex-direction: column;
     /* background-color: #333; */
-    width: 20%;
+    width: 30%;
     padding: 1rem;
     border-radius: 8px;
     backdrop-filter: blur(6px);
-    background-color: rgba(51, 51, 51, 0.9); /* semi-transparent */
+    background-color: rgba(51, 51, 51, 0.2); /* semi-transparent */
 
     /* box-shadow: 0 0 10px #000; */
   }
