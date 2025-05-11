@@ -22,28 +22,35 @@
   font-family: Playfair DisplayItaliana;
 }
 
-/* styling for the links */
-.links a {
-  text-decoration: none;
+/* styling for the nav-links */
+.nav-links a {
   margin-left: 30px;
   font-size: 1.1rem;
-  color: #f9f9f9;
-  transition: opacity 0.6s ease,
-              transform 1s ease;
+  color: #333;
+  transition: opacity 0.4s ease;
   font-family: Montserrat;
   letter-spacing: 2px;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f4f4fc
 }
 
 /* styling for hovering on navbar items */
-.links a:hover {
-  transform: scaleX(1.1);
+.nav-links a:hover {
+  opacity: 0.5;
+  /* transform: rotateX(180deg); */
 }
 
-/* styling for when the navbar links are clicked */
-.links a:active {
-  opacity: 0.2;
+/* styling for when the navbar nav-links are clicked */
+.nav-links a:active {
+  opacity: 0.1;
 }
 
+.nav-link.active {
+  border-bottom: 2px solid #00bcd4;
+  color: #00bcd4;
+}
 /* styling for small screens enhancing responsiveness */
 @media screen and (max-width: 768px) {
   .navbar {
@@ -51,13 +58,13 @@
     align-items: flex-start;
   }
 
-  .links {
+  .nav-links {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
 
-  .links a {
+  .nav-links a {
     margin: 10px 0;
   }
 }
