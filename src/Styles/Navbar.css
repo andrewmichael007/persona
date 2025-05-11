@@ -75,7 +75,7 @@
 .bar {
   width: 15px;
   height: 3px;
-  /* background-color: #f9f9f9; */
+  background-color: #f9f9f9;
   transition: 0.9s ease;
 }
 
