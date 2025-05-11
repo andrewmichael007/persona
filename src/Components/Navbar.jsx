@@ -1,7 +1,7 @@
 // src/Components/Navbar.jsx
 import React from 'react';
 //import link from react-router-dom because our navbar items are goin' to be links
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
 
 const Navbar = () => {
@@ -13,11 +13,11 @@ const Navbar = () => {
         <Link to="/"> portfolio1.0 </Link>
       </div>
       {/* a list of nav items */}
-      <nav className="links">
-        <Link to="/"> Home </Link>
-        <Link to="/about"> About </Link>
-        <Link to="/learning"> Learning </Link>
-        <Link to="/contact"> Contact </Link>
+      <nav className="nav-links">
+        <NavLink to="/" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> Home </NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> About </NavLink>
+        <NavLink to="/learning" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> Learning </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}> Contact </NavLink>
       </nav>
     </header>
   );
