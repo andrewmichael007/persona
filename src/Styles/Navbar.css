@@ -1,6 +1,5 @@
-/* src/styles/Navbar.css */
+/* src/Styles/Navbar.css */
 
-/* styling for the whole navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,15 +13,20 @@
   color: #f9f9f9;
 }
 
-/* styling for the logo */
 .logo a {
   font-weight: bold;
   font-size: 1.4rem;
-  color:#f9f9f9;
+  color: #f9f9f9;
   font-family: Playfair DisplayItaliana;
+  text-decoration: none;
 }
 
-/* styling for the nav-links */
+/* Nav links container */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
 .nav-links a {
   margin-left: 30px;
   font-size: 1.1rem;
@@ -33,39 +37,87 @@
   border: 1px solid white;
   padding: 5px;
   border-radius: 5px;
-  background-color: #f4f4fc
+  background-color: #f4f4fc;
+  text-decoration: none;
 }
 
-/* styling for hovering on navbar items */
 .nav-links a:hover {
   opacity: 0.5;
-  /* transform: rotateX(180deg); */
 }
 
-/* styling for when the navbar nav-links are clicked */
 .nav-links a:active {
   opacity: 0.1;
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #00bcd4;
-  color: #00bcd4;
+  border-bottom: 2px solid grey;
+  color: grey;
 }
-/* styling for small screens enhancing responsiveness */
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 2px;
+  cursor: pointer;
+  transition: opacity 0.9s;
+}
+
+.hamburger:hover{
+    opacity: 0.5;
+}
+
+.hamburger:active{
+  opacity: 0.2;
+}
+
+
+.bar {
+  width: 15px;
+  height: 3px;
+  background-color: #f9f9f9;
+  transition: 0.9s ease;
+}
+
+/* Rotate effect when open */
+.bar.open:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.bar.open:nth-child(2) {
+  opacity: 0;
+}
+.bar.open:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Media Query: Mobile Screens */
 @media screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
+  .hamburger {
+    display: flex;
   }
 
   .nav-links {
-    display: flex;
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 5%;
     flex-direction: column;
-    width: 100%;
+    background-color: #333;
+    width: 20%;
+    padding: 1rem;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px #000; */
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .nav-links a {
     margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 0px;
+    font-size: 1rem;
   }
 }
-
