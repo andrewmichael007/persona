@@ -1,1 +1,8 @@
 
+
+version 1.0 fixes.
+1. Make the design responsive on small screens, preferrably mobile phones.
+2. A button that would display menu items on small screens upon toggling it.
+3. Change the font style.
+4. Nice animation on the home screen to give the visitor a good first impression.
+5. Make us of some icons.
