@@ -13,12 +13,12 @@
   color: #f9f9f9;
 }
 
-.logo img {
+.navbar logo img {
   width: 50px;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
-.logo img:hover {
+.navbar logo img:hover {
   transform: scale(1.1) rotate(3deg);
 }
 
@@ -127,7 +127,7 @@
     font-size: 1rem;
   }
   
- .logo img {
+ .navbar logo img {
     width: 30px;
   }
 }
