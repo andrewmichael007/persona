@@ -125,4 +125,9 @@
     letter-spacing: 0px;
     font-size: 1rem;
   }
+  
+  .logo a {
+    width: 2%;
+    height: auto;
+  }
 }
