@@ -22,16 +22,13 @@ const Footer = () => {
               <img src={linkedin} alt = "linkedin" />
             </a>
           
-          <div className = "gmail-holder">
             <a href="micheleandreas00@gmail.com">Email
-            <img src={gmail} alt = "gmail-holder" />
+              <img src={gmail} alt = "gmail-holder" />
             </a>
-          </div>
-          <div className = "github-holder">
+          
             <a href = "https://www.instagram.com/_mitchcoco/?hl=en" target = "_blank" rel = "noopener noreferrer"> Instagram 
-            <img src={instagram} alt = "instagram" />
+              <img src={instagram} alt = "instagram" />
             </a>
-          </div>
 
         </div>
         <p>&copy; {currentYear} mitch. All rights reserved.</p>
