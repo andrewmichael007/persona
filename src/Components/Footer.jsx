@@ -15,14 +15,13 @@ const Footer = () => {
         <div className="links">
           
             <a href="https://github.com/Yo-mitch" target="_blank" rel="noopener noreferrer"> Github
-            <img src={github} alt = "github" />
+              <img src={github} alt = "github" />
             </a>
           
-          <div className = "linkedin-holder">
             <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn
-            <img src={linkedin} alt = "linkedin" />
+              <img src={linkedin} alt = "linkedin" />
             </a>
-          </div>
+          
           <div className = "gmail-holder">
             <a href="micheleandreas00@gmail.com">Email
             <img src={gmail} alt = "gmail-holder" />
