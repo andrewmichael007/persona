@@ -96,12 +96,14 @@
 }
 
 
-/* Media Query: Mobile Screens */
+/* Media Query: Mobile Screens or at screens 768 and less */
 @media screen and (max-width: 768px) {
+  /* the hamburger clickable should display flex */
   .hamburger {
     display: flex;
   }
 
+  /* the nav-links should disappear and now form in another way */
   .nav-links {
     display: none;
     position: absolute;
