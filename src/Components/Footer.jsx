@@ -13,11 +13,11 @@ const Footer = () => {
     <footer className="footer-container">
       <div className="content">
         <div className="links">
-          <div>
+          
             <a href="https://github.com/Yo-mitch" target="_blank" rel="noopener noreferrer"> Github
             <img src={github} alt = "github" />
             </a>
-          </div>
+          
           <div className = "linkedin-holder">
             <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn
             <img src={linkedin} alt = "linkedin" />
