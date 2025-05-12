@@ -13,15 +13,16 @@
   color: #f9f9f9;
 }
 
-/* .logo a {
-  font-weight: bold;
-  font-size: 1.4rem;
-  color: #f9f9f9;
-  font-family: Lobster; 
-  text-decoration: none;
-  letter-spacing: 1px;
+.logo img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
 }
- */
+.logo img:hover {
+  transform: scale(1.1) rotate(3deg);
+}
+
+
 /* Nav links container */
 .nav-links {
   display: flex;
