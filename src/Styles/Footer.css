@@ -25,11 +25,11 @@
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-/* .links a:hover {
-  color: #00bcd4;
-} */
 
 @media (max-width: 600px) {
   .links {
