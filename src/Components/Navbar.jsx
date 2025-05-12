@@ -2,7 +2,11 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import '../Styles/Navbar.css';
-import logo1 from '../Assets/logo1.png';
+import logoM from '../Assets/logoM.png';
+import logoI from '../Assets/logoI.png';
+import logoT from '../Assets/logoT.png';
+import logoC from '../Assets/logoC.png';
+import logoH from '../Assets/logoH.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +18,11 @@ const Navbar = () => {
     <header className="navbar">
       {/* logo section */}
       <div className="logo">
-        <Link to="/" onClick={closeMenu}> <img src={logo1} alt = "logo" /> </Link>
+        <Link to="/" onClick={closeMenu}> <img src={logoM} alt = "logo" /> </Link>
+        <Link to="/" onClick={closeMenu}> <img src={logoI} alt = "logo" /> </Link>
+        <Link to="/" onClick={closeMenu}> <img src={logoT} alt = "logo" /> </Link>
+        <Link to="/" onClick={closeMenu}> <img src={logoC} alt = "logo" /> </Link>
+        <Link to="/" onClick={closeMenu}> <img src={logoH} alt = "logo" /> </Link>
       </div>
 
       {/* hamburger icon */}
