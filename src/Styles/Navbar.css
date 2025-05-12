@@ -14,7 +14,7 @@
 }
 
 .navbar logo img {
-  width: 50px;
+  width: 20px;
   height: auto;
   transition: transform 0.3s ease-in-out;
 }
