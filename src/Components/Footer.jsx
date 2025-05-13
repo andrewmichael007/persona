@@ -26,7 +26,7 @@ const Footer = () => {
               <img src={gmail} alt = "gmail-holder" />
             </a>
           
-            <a href = "https://www.instagram.com/_mitchcoco/?hl=en" target = "_blank" rel = "noopener noreferrer"> Instagram 
+            <a href = "https://www.instagram.com/_mitchcoco/?hl=en" target = "_blank" rel = "noopener noreferrer" id = "ig-icon"> Instagram 
               <img src={instagram} alt = "instagram" />
             </a>
 

@@ -24,12 +24,21 @@
   color: #f1f1f1;
   text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
   display: flex;
   flex-direction: row;
   align-items: center;
-  border: 1px solid white;
   gap: 1px;
+  padding: 2px;
+  transition: box-shadow 0.6s ease,
+              transform 0.6s ease;
+}
+
+.socials a:hover{
+  box-shadow: 1px 1px 10px  5px;
+}
+
+.socials a:active{
+  transform: scale(1.2);
 }
 
 .socials img{
@@ -39,7 +48,16 @@
 
 @media (max-width: 768px) {
   .socials {
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.8rem;
   }
+
+  .socials img{
+  width: 25px;
+  height: auto;
+}
+
+.socials a {
+  font-weight: 400;
+}
 }
