@@ -16,15 +16,7 @@
 
 .bye-emoji:hover {
   transform: scale(1.2) rotate(10deg);
-}
-
-.name {
-  font-size: 3rem;
-  color: #1a1a1a;;
-  margin-bottom: 0;
-  font-family: Bebas Neue;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .name {
@@ -35,6 +27,16 @@
   font-family: Anton;
   letter-spacing: 1px;
   text-transform: uppercase;
+  animation: zoomIn 1s;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0); opacity: 0;
+  }
+  100%{
+    transform: scale(1); opacity: 1;
+  }   
 }
 
 .hero-subtitle {
@@ -44,39 +46,6 @@
   max-width: 800px;
   font-family: Lato;
 }
-
-/* .hero-buttons {
-  margin-top: 30px;
-}
-
-.btn {
-  padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 1rem;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: all 0.3s ease;
-}
-
-.primary-btn {
-  background-color: #4169e1;
-  color: #fff;
-  border: none;
-}
-
-.primary-btn:hover {
-  background-color: #2748b0;
-}
-
-.secondary-btn {
-  background-color: #e6e6e6;
-  color: #333;
-  border: 1px solid #ccc;
-}
-
-.secondary-btn:hover {
-  background-color: #d4d4d4;
-} */
 
 .scroll-down {
   margin-top: 50px;
@@ -100,16 +69,8 @@
     font-size: 2rem;
   }
 
-  .name {
-    font-size: 2.4rem;
-  }
-
   .hero-subtitle {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
-  .btn {
-    margin-top: 10px;
-    display: inline-block;
-  }
 }
