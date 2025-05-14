@@ -27,7 +27,7 @@
   font-family: Anton;
   letter-spacing: 1px;
   text-transform: uppercase;
-  animation: zoomIn 1s;
+  animation: zoomIn 2s;
 }
 
 @keyframes zoomIn {
