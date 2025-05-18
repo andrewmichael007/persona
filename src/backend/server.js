@@ -1,9 +1,9 @@
 // require statements
 const express = require("express");
-const mongoose = require('mongoose');
-const cors = require('cors');
-require('dotenv').config();
-
+const mongoose = require("mongoose");
+const cors = require("cors");
+const contactRouter = require("./routes/contact");
+require("dotenv").config();
 
 // setting up server named app
 const app = express();
@@ -12,6 +12,8 @@ const app = express();
 app.use(cors());
 // telling my server to understand json format of express
 app.use(express.json());
+//require the route file
+app.use('/api/contact', contactRouter);
 
 //mongodb connection
 mongoose.connect(process.env.MONGO_URI, {
@@ -23,12 +25,12 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.error(err));
 
 // setting up a post  route called contacts
-app.post('/contacts', (req, res) => {
+app.post('/api/contact', (req, res) => {
     res.status(201).send("message sent");
 });
 
 // storing the uri and port number
-const PORT = process.env.MONGO_URI || 8080;
+const PORT =  8080;
 
 app.listen(PORT, () => {
     console.log(`server is ready at port ${PORT}`);
