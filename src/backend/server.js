@@ -1,9 +1,11 @@
 // require statements
 const express = require("express");
+
 const mongoose = require("mongoose");
 const cors = require("cors");
 const contactRouter = require("./routes/contact");
 require("dotenv").config();
+// const axios = require("axios");
 
 // setting up server named app
 const app = express();
@@ -22,7 +24,7 @@ mongoose.connect(process.env.MONGO_URI, {
     // uses more stable way to connect
     // useUnifiedTopology: true
 }).then(() => console.log("mongodb connected"))
-  .catch(err => console.error(err));
+  .catch(err => console.error(err)); 
 
 // setting up a post  route called contacts
 app.post('/api/contact', (req, res) => {
