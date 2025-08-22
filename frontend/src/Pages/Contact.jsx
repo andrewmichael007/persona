@@ -22,8 +22,8 @@ const Contact = () => {
     // status is a state value, setStatus updates the status
     submitting: false,
     submitted: false,
-    success: null,
-    msg: ''
+    msg: '',
+    success: null
   });
 
   //handling changes
@@ -77,7 +77,7 @@ const Contact = () => {
           <input
             name="name"
             type="text"
-            placeholder="Your full name"
+            // placeholder="Your full name"
             value={form.name}
             onChange={handleChange}
             required
@@ -89,7 +89,7 @@ const Contact = () => {
           <input
             name="email"
             type="email"
-            placeholder="you@example.com"
+            // placeholder="you@example.com"
             value={form.email}
             onChange={handleChange}
             required
@@ -109,12 +109,19 @@ const Contact = () => {
         </div>
 
         <ReCAPTCHA
+        className="my-custom-recaptcha"
         //this is the real site key
         sitekey="6LfT51UrAAAAAO7sBjRXfuHDnTRj8fwaAQNqk3nz"
         //onchange
         onChange={(token) => setForm(prev => ({ ...prev, recaptchaToken: token }))}
+
         onExpired={() => setForm(prev => ({ ...prev, recaptchaToken: '' }))}
-        theme="light"
+
+        onLoad={() => console.log("recaptcha Loaded!")}  
+
+        onError={() => console.log("recaptcha Error!")}    
+            
+        theme="dark"
         />
 
         <button 
@@ -122,7 +129,7 @@ const Contact = () => {
         type="submit" 
         disabled={status.submitting}
         > 
-        {status.submitting ? 'Sending...' : 'Send Message'}
+        {status.submitting ? 'Sending...' : "Send"}
         </button>
 
         {status.submitted && (

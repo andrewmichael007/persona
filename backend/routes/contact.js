@@ -3,11 +3,11 @@
 
 const express = require("express");
 const router = express.Router();
-const schema = require("../models/schema")
+const schema = require("../models/schema");
 const { body, validationResult } = require("express-validator");
 const rateLimit = require("express-rate-limit");
 const axios = require("axios");
-
+// const nodemailer = require("nodemailer");
 
 // defining rate limiter to limit the number of requests
 const rateLimiter = rateLimit({
@@ -20,6 +20,18 @@ const rateLimiter = rateLimit({
         msg: "too many requests, try again after an hour"
     }
 });
+
+//creating the email transporter
+// const emailTransporter = nodemailer.createTransport({
+//     host: "localhost",
+//     port: 3000,
+//     secure: false,
+//     service:"gmail",
+//     auth:{
+//         user: process.env.EMAIL_USER,
+//         pass: process.env.EMAIL_PASS
+//     }
+// });
 
 // routing the contact.js component
 router.post(
@@ -36,7 +48,7 @@ router.post(
     ],
 
     async(req,res) => {
-        
+
         //checking for errors
         const errors = validationResult(req);
         if(!errors.isEmpty() ){
@@ -44,7 +56,7 @@ router.post(
         }
 
         const { name , email, message, recaptchaToken } = req.body;
-        
+
         // Verify reCAPTCHA
         const verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET}&response=${recaptchaToken}`;
 
@@ -61,11 +73,26 @@ router.post(
 
             res.status(200).json({success : true, msg: "message sent"});
 
-        } catch (error) {
-            console.error(error);
-            res.status(500).json({ success: false, msg: 'Server error' });
+            //after saving email, let's send the email
+            // await emailTransporter.sendMail({
+            //     from:`"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+            //     to: process.env.EMAIL_USER, //to my email stored in .env file
+            //     subject: "New Message", 
+            //     html:` 
+            //         <h3> New Message Received </h3>
+            //         <p><strong> Name: </strong> ${name} </p>
+            //         <p><strong> Email: </strong> ${email} </p>
+            //         <p><strong> Message: </strong> ${message} </p> 
+            //     `
+            // });
+
         }
-});
+        catch(error) {
+            console.error(error);
+            res.status(500).json({ success: false, message: 'Server error' });
+        }
+    }
+);
 
 // export the contact route function
 module.exports = router;

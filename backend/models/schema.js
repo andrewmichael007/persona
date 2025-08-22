@@ -6,10 +6,25 @@ const mongoose = require("mongoose");
 
 // create a blueprint to represent how mongodb should expect and represent data
 const message = new mongoose.Schema({
-    name: {type: String, required: true},
-    email: {type: String, required:  true},
-    message: {type: String, required: true},
-    createdAt: {type: Date, dafault: Date.now}
+    name: {
+        type: String, 
+        required: true
+    },
+
+    email: {
+        type: String, 
+        required:  true
+    },
+
+    message: {
+        type: String,
+        required: true
+    },
+
+    createdAt: {
+        type: Date, 
+        dafault: Date.now
+    }
 });
 
 // export module with the name of the file and name of the schema formed
