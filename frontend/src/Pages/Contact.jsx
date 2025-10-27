@@ -22,7 +22,7 @@ const Contact = () => {
     // status is a state value, setStatus updates the status
     submitting: false,
     submitted: false,
-    msg: '',
+    message: '',
     success: null
   });
 
@@ -38,12 +38,20 @@ const Contact = () => {
 
     //handling recaptcha in the handling submit
     if(!form.recaptchaToken){
-      setStatus({ success: false, submitted: true, msg: "complete the recaptcha"});
+      setStatus({
+        success: false,
+        submitted: true,
+        message: "complete the recaptcha"
+      });
       return;
     };
 
     try {
+      //log the data been sent
+      console.log("form data been sent: ", form);
+
       const res = await axios.post("http://localhost:8080/api/contact" , form);
+
       if (res.data.success) {
         setStatus({
           submitted: true,
@@ -51,7 +59,12 @@ const Contact = () => {
           success: true,
           msg: res.data.msg
         });
-        setForm({ name: '', email: '', message: '' }); // reset
+        //reset
+        setForm({ 
+          name: '', 
+          email: '', 
+          message: '' 
+        }); 
       }
     } catch (err) {
       console.error(err);
@@ -59,7 +72,7 @@ const Contact = () => {
         submitted: true,
         submitting: false,
         success: false,
-        msg: 'Something went wrong. Try again later.'
+        msg: " something went wrong. Try again later."
       });
     }
   };
