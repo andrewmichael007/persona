@@ -8,7 +8,7 @@ const schema = require("../models/schema");
 const { body, validationResult } = require("express-validator");
 const rateLimit = require("express-rate-limit");
 const axios = require("axios");
-// const nodemailer = require("nodemailer");
+const nodemailer = require("nodemailer");
 
 // defining rate limiter to limit the number of requests
 const rateLimiter = rateLimit({
@@ -23,16 +23,16 @@ const rateLimiter = rateLimit({
 });
 
 //creating the email transporter
-// const emailTransporter = nodemailer.createTransport({
-//     host: "localhost",
-//     port: 3000,
-//     secure: false,
-//     service:"gmail",
-//     auth:{
-//         user: process.env.EMAIL_USER,
-//         pass: process.env.EMAIL_PASS
-//     }
-// });
+const emailTransporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    service:"gmail",
+    auth:{
+        user: "micheleandreas00@gmail.com",
+        pass: "awqo mljq bcup xxho"
+    }
+});
 
 // routing the contact.js component
 router.post(
@@ -72,26 +72,35 @@ router.post(
             const newSchema = new schema({name, email, message});
             await newSchema.save();
 
-            res.status(200).json({success : true, msg: "message sent"});
+            // debug check before sending
+            console.log('EMAIL_USER:', process.env.EMAIL_USER),
+            console.log('EMAIL_PASS exists:', !!process.env.EMAIL_PASS),
 
             //after saving email, let's send the email
-            // await emailTransporter.sendMail({
-            //     from:`"Portfolio Contact" <${process.env.EMAIL_USER}>`,
-            //     to: process.env.EMAIL_USER, //to my email stored in .env file
-            //     subject: "New Message", 
-            //     html:` 
-            //         <h3> New Message Received </h3>
-            //         <p><strong> Name: </strong> ${name} </p>
-            //         <p><strong> Email: </strong> ${email} </p>
-            //         <p><strong> Message: </strong> ${message} </p> 
-            //     `
-            // });
+            await emailTransporter.sendMail({
+                from:`"Portfolio Contact" <${process.env.EMAIL_USER}>`,
+                to: process.env.EMAIL_USER, //to my email stored in .env file
+                subject: "New Message", 
+                html: ` 
+                    <h3> New Message Received </h3>
+                    <p><strong> Name: </strong> ${name} </p>
+                    <p><strong> Email: </strong> ${email} </p>
+                    <p><strong> Message: </strong> ${message} </p> 
+                `
+            });
 
+            res.status(200).json({
+                success : true, 
+                msg: "message sent"
+            });
         }
         catch(error) {
             console.error(error);
-            res.status(500).json({ success: false, message: 'Server error' });
-        }
+            res.status(500).json({ 
+                success: false, 
+                message: 'Server error' 
+            });
+        };
     }
 );
 
