@@ -14,6 +14,7 @@ const app = express();
 app.use(cors());
 // telling my server to understand json format of express
 app.use(express.json());
+
 //require the route file
 app.use('/api/contact', contactRouter);
 
