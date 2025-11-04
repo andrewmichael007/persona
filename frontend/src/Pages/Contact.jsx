@@ -59,6 +59,7 @@ const Contact = () => {
           success: true,
           msg: res.data.msg
         });
+        
         //reset
         setForm({ 
           name: '', 
